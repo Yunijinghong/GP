@@ -1,0 +1,408 @@
+
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+\input{Settings} 
+\usepackage{lipsum}
+\usepackage{adjustbox}
+%\usepackage{mathrsfs} % 字体
+%\captionsetup[figure]{name=Figure} % 图片形式
+%\captionsetup[table]{name=Table} % 表格形式
+
+\begin{document}
+	
+	
+	
+	% 实验报告封面	
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{
+				|X|X|X|X
+				|X|X|X|X|}
+			\hline
+			\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
+			\hline
+			\LARGE25 & & \LARGE25 & & \LARGE30 & & \LARGE80 & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 信息栏nih
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业： &  物理学 &年级： & 22级\\
+			\hline
+			姓名： & 黄罗琳 & 学号： & 22344001\\
+			\hline
+			实验时间： & 2024.3.7 & 教师签名：见后 & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 大标题
+	\begin{center}
+		\LARGE 实验 CC3 \quad 双光栅测量微弱振动位移量实验
+	\end{center}
+	% ---
+	
+	% 注意事项
+	
+	% 基本
+	\textbf{【实验报告注意事项】}
+	\begin{enumerate}
+		\item 实验报告由三部分组成：
+		\begin{enumerate}
+			\item 预习报告：课前认真研读实验讲义，弄清实验原理；实验所需的仪器设备、用具及其使用、完成课前预习思考题；了解实验需要测量的物理量，并根据要求提前准备实验记录表格（可以参考实验报告模板，可以打印）。\textcolor{red}{\textbf{（20分）}}
+			\item 实验记录：认真、客观记录实验条件、实验过程中的现象以及数据。实验记录请用珠笔或者钢笔书写并签名（\textcolor{red}{\textbf{用铅笔记录的被认为无效}}）。\textcolor{red}{\textbf{保持原始记录，包括写错删除部分，如因误记需要修改记录，必须按规范修改。}}（不得输入电脑打印，但可扫描手记后打印扫描件）；离开前请实验教师检查记录并签名。\textcolor{red}{\textbf{（30分）}}
+			\item 数据处理及分析讨论：处理实验原始数据（学习仪器使用类型的实验除外），对数据的可靠性和合理性进行分析；按规范呈现数据和结果（图、表），包括数据、图表按顺序编号及其引用；分析物理现象（含回答实验思考题，写出问题思考过程，必要时按规范引用数据）；最后得出结论。\textcolor{red}{\textbf{（30分）}}
+		\end{enumerate}
+		\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。\textcolor{red}{（80分）}}
+		\item 实验报告就是将预习报告、实验记录、分析讨论合起来，加上本页封面。实验记录须手写，预习报告和分析讨论部分手写或打印均可。
+		\item 每次完成实验后的一周内交实验报告（特殊情况不能超过两周），每份报告必须注明姓名和学号，合作者和学号，否则按零分处理。 
+		\item \textbf{安全注意事项}：
+		\begin{enumerate}
+			\item 实验过程中，光源不要随意打开关闭；
+			\item 严禁用手触光学镜头的表面；
+			\item 严禁用强力和斜向力旋转测微头，这样会损坏测微头或其他部件；
+			\item 不要拆卸传动机构，以免影响仪器正常使用；
+			\item 实验过程中，数条纹时,避免桌面的振动。
+			
+		\end{enumerate}
+	\end{enumerate}
+	
+
+	
+	
+	% 目录
+	\clearpage
+	\tableofcontents
+	\clearpage
+	% ---
+	
+	
+	
+	% 预习报告	
+	
+	% 小标题
+	\setcounter{section}{0}
+	\section{双光栅测量微弱振动位移量实验 \quad\heiti 预习报告}
+	% ---
+	
+	% 实验目的
+	\subsection{实验目的}
+	\begin{enumerate}
+		\item 了解利用光的多普勒频移形成光拍的原理并用于测量光拍拍频。
+		\item 学会使用精确测量微弱振动位移的一种方法。
+		\item 应用双光栅微弱振动测量仪测量音叉振动的微振幅
+	\end{enumerate}
+	% ---
+	
+	% 仪器用具
+	\subsection{仪器用具}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.6}
+		% \setlength{\tabcolsep}{10mm}
+		\begin{tabular}{p{0.05\textwidth}|p{0.20\textwidth}|p{0.05\textwidth}|p{0.5\textwidth}}
+		
+			\hline
+			编号& 仪器用具名称 & 数量 &  主要参数（型号，测量范围，测量精度等） \\
+			\hline
+			1& 双光栅微弱振动测量仪 & 1 & DHGS-1 型，半导体激光器： λ=650nm，功
+			率 2-5mW；音叉谐振频率： 500Hz 左右。\\
+			
+				2&数字示波器& 1 &  DS1000E(D)\\
+			
+				3& 信号发生器 & 1 &  MFG-2000\\
+		
+				
+			\hline
+		
+		\end{tabular}
+	\end{table}
+	% ---
+	
+	% 原理概述
+	\subsection{实验原理}
+	\begin{enumerate}
+		\item 位移光栅的多普勒频移\\
+		因多普勒效应产生的频率变化称为多普勒频移。 图1的位相光栅与振幅光栅（由透光部分和不透光部分组成）不同，它是利用不同的光密和光疏媒质部分对同一束单色光产生的光程差的不同而导致入射的平面波发生畸变。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{images/出射的折曲面波阵面}
+			\caption{出射的折曲面波阵面}
+			\label{fig:出射的折曲面波阵面}
+		\end{figure}
+		现推导位移光栅的多普勒频移公式。\\
+		激光平面波入射到光栅，由于光栅上缝自身和每缝之间的衍射作用，通过光栅后光的强度出现周期性的变化。远场可得：$a(sin\theta_m-sin\theta_i)=m\lambda,\quad m\in N$
+		其中，$a$是光栅常数；$\theta_m$第 m 级谱线对应的折射角；$\theta_i$是入射角(本实验中$\theta_i=0$),$\lambda$为波长。
+		如果光栅在 y 方向以速度 v 移动， 由于可以理解为积分原点以速度 v 移动，则从光栅出射的光的波阵面也以速度 v 在 y 方向移动。 因此在不同时刻，对应于同一级的衍射光射，它从光栅出射时，在 y 方向也有一个 𝑣𝑡 的位移量。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{images/衍射光线位移量}
+			\caption{衍射光线位移}
+			\label{衍射光线位移}
+		\end{figure}
+		这个位移量对应于出射光波位相的变化量为 $\Delta\varphi(t)$
+		
+		$$\Delta\varphi(\mathfrak{t})=\mathrm{k}_0\Delta\mathfrak{s}=\mathrm{k}_0\nu tsin\theta $$ \\
+		最终可得:
+		$\Delta\varphi(\mathfrak{t})=2\pi\mathrm{m}\frac vdt=\mathrm{m}\omega_dt$
+		此为就是移动的位相光栅 m 级衍射光波与静止的位相光栅衍射光波的相位差。
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{images/移动光栅的多普勒频移}
+			\caption{移动光栅的多普勒频移}
+			\label{移动光栅的多普勒频移}
+		\end{figure}
+		
+		
+		\item 2. 光拍的获得与检测 \\
+		光频率很高，为了在光频$^{\omega_0}$中检测出多普勒频移量，必须采用“拍”的方法，即要把已频移的和未频移的光束互相平行迭加，以形成光拍。由于拍频较低，容易测得，通过拍频即可检测出多普勒频移量。
+		
+		本实验形成光拍的方法是采用两片完全相同的光栅平行紧贴，一片 B 静止，另一片 A 相对移动。激光通过双光栅后所形成的衍射光，即为两种以上光束的平行迭加。由于双光栅紧贴，激光束具有一定宽度，故该光束能平行迭加，这样直接而又简单地形成了光拍。\\
+		将$I=\xi(E_1+E_2)^2$展开后舍去无法检测项。
+		
+		$$i_s=\zeta E_{10}E_{20}\cos\left[\omega_dt+(\omega_2-\omega_1)\right]$$ \\
+		拍频即为：
+		$$
+		F=\frac{\omega_d}{2\pi}=\frac{\nu_A}d=\nu_An_\theta 
+		$$
+		
+		其中，$n_\theta$是光栅密度，本实验中$n_\theta=100mm^{-1}$。
+		
+	\item 微弱振动位移量的检测\\
+		从式(5)可知，由于$n_\mathrm{\theta}$是常数且$\upsilon_\mathrm{A}$随时间周期变化，故微弱振动的位移振幅为：
+		
+		$$
+		A=\frac12\int_0^{\Large\frac T2}\nu(t)dt=\frac1{2n_\theta}\int_0^{\Large\frac T2}F(t)dt\quad(6)
+		$$
+		
+		其中，$\int_0^{T/2}F(t)dt$表示在T/2 时间内的拍频波的个数，所以只要测得拍频波的波数， 就可得到较弱振动的位移振幅。
+		
+		波形数由完整波形数、波的首数、波的尾数三部分组成。波形数n为：
+		$n=n_0+\frac12$
+		其中，$n_0$为完整波形数，a、b 为波群的首、尾幅度和该处完整波形的振幅之比，
+		$sin^{-1}a$和$sin^{-1}b$的取值范围是0~360°, 所以要注意不完整波形中是否出现波峰和波谷。例如，在下图中，由于首波恰好完整，而尾部出现了一个波峰，故：
+		
+		$$
+		n=n_0+\frac{sin^{-1}b}{360°}=4+\frac{113.6°}{360°}=4.32
+		$$
+		
+	\end{enumerate}
+	% ---
+	
+	`
+	
+	% 实验前思考题
+	\subsection{预习思考题}
+	请见实验原理部分
+
+	
+	
+	
+	
+	% 实验记录	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\centering
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业： & 物理学 & 年级： & 2022级 \\
+			\hline
+			姓名： & 黄罗琳 & 学号： & 22344001、22344002\\
+			\hline
+			室温： &  25℃& 实验地点： & A522 \\
+			\hline
+			学生签名：&  & 评分： &\\
+			\hline
+			实验时间：& 2024/3/7 & 教师签名：&\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{双光栅测量微弱振动位移量实验 \quad\heiti 实验记录}
+	% ---
+	
+	% 实验过程记录
+	\subsection{实验内容、步骤与结果}
+	
+	%
+	\subsubsection{实验完整步骤简述}
+	\begin{enumerate}
+		\item 将固纬信号发生器的 CH1 通道连接至光学实验平台音叉驱动器（动光栅），输出频率约为 500 Hz、Vpp 约为 6 V 的正弦波驱动信号。
+		
+		\item 将光学实验平台光电传感器输出信号连接至示波器的 CH1 通道。因为光电传感器输出信号功率较低，示波器 CH1 探头选择放大约 500 倍。
+		
+		\item 将固纬信号发生器同步信号输出，连接至示波器 CH2 作为触发源。
+
+		
+		\item 光路调整：将激光器接至半导体激光电源，静光栅、动光栅排成一直线。调节静光栅和动光栅位置，使其平行。调整至形成竖排衍射光斑，调节至中间最亮光斑进入光电传感器。
+		
+		\item 音叉谐振调节：调整音叉和激振换能器间距至约 0.3mm。将固纬信号发生器 CH1 通道连接至光学实验平台音叉驱动器（动光栅），输出频率约为 500 Hz、Vpp 约为 6 V 的正弦波驱动信号。微调频率至音叉谐振（振幅最大）。调节时，轻触音叉顶部感受振动强度或听振动声音。若振动太强，减小驱动信号幅度。示波器上波数约为 15 个。记录此时音叉振动频率、完整波数、不足一个完整波形的首尾数值以及对应振幅值。
+		
+		\item 测量外力驱动音叉时的谐振曲线。在音叉谐振点附近，调节驱动信号频率，测量振动频率与振幅大小，频率间隔为 0.1 Hz，选取 8 个点。保持驱动信号幅度不变，通过调节音叉上小孔中软管，改变音叉的有效质量，观察谐振曲线的变化趋势。
+	\end{enumerate}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{images/实验剪影1}
+		\caption{未插入软管实验效果示例}
+		\label{实验剪影1}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{images/实验剪影2}
+		\caption{插入软管后实验效果示例}
+		\label{实验剪影2}
+	\end{figure}
+	注：实验效果相对较好，难点在于调整光路和仪器，得到正确的实验图像后，相关内容比较简单。
+		\subsubsection{实验数据整理}
+		\begin{table}[]
+			\begin{tabular}{|l|l|l|}
+			\hline
+			频率/HZ & 波数    & 振幅      \\ \hline
+			505.3 & 6.45  & 0.03225 \\ \hline
+			505.4 & 9.45  & 0.04725 \\ \hline
+			505.5 & 21.25 & 0.10625 \\ \hline
+			505.6 & 37.54 & 0.1877  \\ \hline
+			505.7 & 18.54 & 0.0927  \\ \hline
+			505.8 & 10.52 & 0.0526  \\ \hline
+			505.9 & 7.57  & 0.03785 \\ \hline
+			506   & 5.45  & 0.02725 \\ \hline
+			506.1 & 4.36  & 0.0218  \\ \hline
+			506.2 & 3.55  & 0.01775 \\ \hline
+			506.3 & 3.25  & 0.01625 \\ \hline
+			506.4 & 2.53  & 0.01265 \\ \hline
+			506.5 & 2.45  & 0.01225 \\ \hline
+			506.6 & 2.4   & 0.012   \\ \hline
+			\end{tabular}
+			\caption{未加软管前实验数据（包含谐振点）}
+		    \label{未加软管前实验数据}
+		\end{table}
+			\begin{table}[!ht]
+				\centering
+				\begin{tabular}{|l|l|l|}
+				\hline
+					频率/HZ & 波数 & 振幅  \\ \hline
+					504.5 & 3.26 & 0.0163  \\ \hline
+					504.6 & 4.4 & 0.022  \\ \hline
+					504.7 & 5.46 & 0.0273  \\ \hline
+					504.8 & 8.28 & 0.0414  \\ \hline
+					504.9 & 11.9 & 0.0595  \\ \hline
+					505 & 19.15 & 0.09575  \\ \hline
+					505.1 & 13.5 & 0.0675  \\ \hline
+					505.2 & 8.65 & 0.04325  \\ \hline
+					505.3 & 7.53 & 0.03765  \\ \hline
+				 \end{tabular}
+				 \caption{加软管后实验数据（包含谐振点）}
+		           \label{加软管后实验数据}
+			\end{table}
+	
+		
+	
+	
+	
+
+	% 问题记录
+	\subsection{实验过程遇到问题及解决办法}
+	\begin{enumerate}
+		\item 在实验过程中，起初并没有得到合适的信号图像，通过调整焦距，距离，以及可能会存在光线打到音叉上等一些操作问题，导致我用了好长时间来对实验仪器进行调整，最终得到了初步可用的实验图像，从而继续实验。
+		\item 实验有一些仪器存在问题，例如激光亮度不够，仪器接收不到信号，此现象为某一台仪器上只存在CH2的方波（蓝色）显示，而CH1对应的黄线根本不会随着光路的调整而产生变化，初步认定为是光电传感器的问题。
+		\item 此外在实验过程中可以明显感觉出
+	\end{enumerate}
+
+	
+	
+	% 分析与讨论	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业：& 物理学 &年级：& 2022级\\
+			\hline
+			姓名： & 黄罗琳 & 学号：& 22344001\\
+			\hline
+			日期：& 2024/3/14 & 评分： &\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{迈克尔逊干涉及应用（白光干涉） \quad\heiti  分析与讨论}
+	% ---
+	
+	% 数据处理
+	\subsection{实验数据分析}
+	
+	\subsubsection{音叉谐振时光拍信号的平均频率}
+	\begin{enumerate}
+		\item 实验结果计算\\
+		根据实验测量数据得知，音叉谐振频率为：505.6HZ\\
+		波数：37.54
+	    根据平均频率计算公式可得：
+	  $$\tilde{F}=\frac{2}{T}\int_{0}^{\frac{T}{2}}F(t)dt=2\times505.6\times37.54=37960.488\text{Нz}$$
+	  \item 实验结果分析\\
+	  从实验结果来看，似乎频率非常高，初步分析可能是由于在测量过程中由于示波器读数的问题，从下图可知，当时示波器显示的波数相当密集，对照所有实验操作步骤很数据总体趋势来看，似乎并无差错，可能由于实验仪器的缘故，导致数值偏大。
+
+	  \begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\linewidth]{images/505.6}
+		\caption{谐振频率（505.6HZ）实验图像}
+		\label{505.6}
+	\end{figure}
+	  
+	\end{enumerate}
+	
+	%
+	\subsubsection{ 音叉在谐振点时作微弱振动的位移振幅}
+	$$\begin{aligned}A=\frac{1}{2n_\theta}\int_0^{\frac{T}{2}}F(t)dt=0.1877\text{mm}\end{aligned}$$
+	\subsubsection{ 画出音叉的频率—振幅曲线；分析讨论其特点}
+	% 实验后思考题
+	\subsection{实验后思考题}
+	
+	%思考题1
+	\begin{question}
+		 当空气温度变化时，空气折射率也会发生变化，请思考如何测得空气折射率？
+		 类似于测量透明介质的实验，实验最根本在于将透明介质放于光路中，故我们可以将实验中一部分光路可以在真空与空气间相互切换，测得相关参数后，与测量透明介质的实验相同的计算方法，可以算出折射率。然而，由于空气的折射率会随着温度的变化而变化，在实验中需要保持空气温度不变，可以将实验装置放置在恒温环境中，以有效防止温度的变化对实验结果的影响。此外，还要检测环境的气压，防止气压变化导致折射率测量出现误差。
+	\end{question}
+	
+	
+	% 结语部分
+	\clearpage
+	
+	% 小标题
+	\section{迈克尔逊干涉及应用（白光干涉） \quad\heiti  后记}
+	% ---
+	
+	% 总结、杂谈与致谢
+	\subsection{实验心得和体会、意见建议等}
+	\begin{enumerate}
+		\item 该实验相比于上学期迈克尔逊激光干涉实验难度剧增，主要是白光的相干长度较短，很难找到较好的实验图像。
+		\item 实验仪器可能存在一些问题，导致尽管从激光，钠灯，汞灯，最后到白光干涉属于一步步精确的过程，但是随着精密测微头的转动，中心区域依旧会逐步偏离，从而导致了实验一次次失败，失之毫厘谬以千里。
+		\item 实验原理方面与激光干涉相差不大，主要难度在于找到白光干涉条纹，比较考验耐心和毅力，也比较靠运气，当然标准的实验操作之后，也会很快就找到了。
+	\end{enumerate}
+	% ---
+	
+	
+	% ---
+	
+	% 附件
+	\subsection{附件及实验相关的软硬件资料等}
+	试验台桌面整理如%\cref{}所示。
+	
+	
+\end{document}
