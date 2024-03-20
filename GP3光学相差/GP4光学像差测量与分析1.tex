@@ -1,0 +1,390 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+\input{Settings} 
+\usepackage{lipsum}
+\usepackage{adjustbox}
+%\usepackage{mathrsfs} % 字体
+%\captionsetup[figure]{name=Figure} % 图片形式
+%\captionsetup[table]{name=Table} % 表格形式
+\begin{document}
+	
+	% 实验报告封面	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{
+				|X|X|X|X
+				|X|X|X|X|}
+			\hline
+			\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
+			\hline
+			\LARGE25 & & \LARGE25 & & \LARGE30 & & \LARGE80 & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 信息栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			年级、专业： & 2022级 物理学 &组号：教学班1 & \\
+			\hline
+			姓名： & 黄罗琳   & 学号： &22344001   \\
+			\hline
+			实验时间： & 2024/3/21 & 教师签名： & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 大标题
+	\begin{center}
+		\LARGE CD1\quad 光学像差测量与分析
+	\end{center}
+	% ---
+	
+	% 注意事项
+	
+	% 基本
+	\textbf{【实验报告注意事项】}
+	\begin{enumerate}
+		\item 实验报告由两部分组成：
+		\begin{enumerate}
+			\item 预习报告：课前认真研读实验讲义，弄清实验原理；实验所需的仪器设备、用具及其使用、完成课前预习思考题；了解实验需要测量的物理量，并根据要求提前准备实验记录表格（可以参考实验报告模板，可以打印）。（30分）
+			\item 实验记录与分析：认真、客观记录实验条件、实验过程中的现象以及数据。实验记录请用珠笔或者钢笔书写并签名（用铅笔记录的被认为无效）。保持原始记录，包括写错删除部分，如因误记需要修改记录，必须按规范修改。（不得手记的值输入到电脑打印）；离开前请实验教师检查记录并签名。（50分）
+		\end{enumerate}
+		
+		\item\textcolor{red}{ 本实验报告可提前打印出来，当场记录分析完成交给带实验的老师，课后无需再提交。若当场完成不了，则请课后完成，再扫描并通过seelight提交。}\\
+		\textcolor{red}{\colorbox{yellow}{注意：本文档已留出填写空间，若填写空间不够的话请提前规划留白，做到报告的美观）}}
+		\item 注意事项：
+		\begin{enumerate}
+			\item 实验中避免激光器伤到眼睛
+			\item 避免用手直接接触镜片的光学面
+			\item 安装镜片时需在光学平台上尽量靠近台面的高度操作，以免失手跌落摔碎镜片
+			\item 实验平台配件所用固定螺钉需拧紧，以免镜架晃动；但不可过紧，以免损坏
+			\item 实验前需按仪器清单检查光学元件是否齐全，实验结束后按照顺序放回元件盒
+		\end{enumerate}
+		
+		\end{enumerate}
+	
+	
+	% 目录
+	\clearpage
+	\tableofcontents
+	\clearpage
+	% ---
+	
+	
+	
+	% 预习报告	
+	
+	% 小标题
+	\setcounter{section}{0}
+	\section{CD1\quad 光学像差测量与分析 \heiti 预习报告}
+	% ---
+	
+	% 实验目的
+	\subsection{实验目的}
+	\begin{enumerate}
+		\item 了解七种几何像差产生的原理、基本规律；
+		\item 了解各种像差对光学成像质量的影响；
+		\item 掌握慧差、色差产生的原理及其测量表征；
+		\item 掌握光学系统的基本调试方法；
+	\end{enumerate}
+	% ---
+	
+	% 仪器用具
+	\subsection{仪器用具}
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			
+			\textbf{产品编号} & \textbf{产品名称} & \textbf{规格}          & \textbf{数量} \\ \hline
+			1                & 激光光源           & λ=632.6nm            & 1            \\ \hline
+			2                & 激光器夹持器       & 3维调整               & 1            \\ \hline
+			3                & 显微物镜           & 10×/0.25             & 1            \\ \hline
+			4                & 针孔               & Ø100um或Ø50um       & 1            \\ \hline
+			5                & 五维调整机构       & 装配显微物镜和针孔用 & 1            \\ \hline
+			6                & 衰减片1            & 0.0001（衰减系数）  & 1            \\ \hline
+			7                & 衰减片2            & 0.01（衰减系数）     & 1            \\ \hline
+			8                & 双凸透镜1          & 焦距f=300mm         & 1            \\ \hline
+			9                & 平凸透镜2          & 焦距f=100mm         & 1            \\ \hline
+			10               & 平凸透镜3          & 焦距f=150mm         & 1            \\ \hline
+			11               & 白屏               & SZ-13，一面白屏，一面带坐标纸 & 1 \\ \hline
+			12               & 成像相机           & 大恒的MER-130-30UM或元启智能的REV-13AMU2C & 1 \\ \hline
+			13               & 数据线             & 图像采集数据线       & 1            \\ \hline
+			14               & 计算机             & 台式或笔记本，安装有成像相机图像采集软件 & 1 \\ \hline
+			15               & 光学导轨           & 长度1米，带刻度      & 1            \\ \hline
+			16               & 二维平移台         & 行程>10mm            & 4            \\ \hline
+			17               & 平移滑块           &                      & 8            \\ \hline
+			18               & 支杆               & 50mm长和75mm长       & 3+5          \\ \hline
+			19               & 磁性表座           &                      & 4            \\ \hline
+			20               & 旋转调整台         & 可调角度＞±5°        & 1            \\ \hline
+			21               & 白光灯             & GY-6型，亮度可调，即溴钨灯 & 1     \\ \hline
+			22               & 滤光片1            & 透光波长：435nm       & 1            \\ \hline
+			23               & 滤光片2            & 透光波长：630nm       & 1            \\ \hline
+			\end{tabular}
+			\end{table}
+			
+	% ---
+	
+	% 原理概述
+	\subsection{原理概述}
+	
+当光线穿过透镜或其他光学元件时，由于光的波长不同，其在介质中的折射率也会有所不同。这导致了色差和慧差这两种光学现象的产生。
+
+\begin{enumerate}
+    \item \textbf{色差（Chromatic Aberration）}：
+    
+    色差主要由两个因素引起：球面色差和色散色差。
+    
+    \begin{itemize}
+        \item \textbf{球面色差}：当光线通过球面透镜或球面镜面时，由于球面形状的限制，不同部位的光线折射程度不同，导致不同颜色的光聚焦于不同位置。具体而言，透镜的中心部位对光线的折射程度比较大，而边缘部位则较小。因此，蓝色光会被更多地折射，使其焦点位置比红色光更接近透镜，从而导致不同波长的光聚焦位置不同。
+        
+        \item \textbf{色散色差}：不同波长的光在透明介质中传播时，其折射率会有所不同，即介质对不同波长的光有不同的折射率。因此，当白光通过透镜或透明介质时，不同波长的光会以不同的角度折射，导致不同颜色的光被分散开来，形成彩色边缘或色彩偏移。
+    \end{itemize}
+    
+    解决色差问题的方法包括使用复合透镜、消色差镜片、非球面透镜等，以及在设计光学系统时考虑到色差校正的需求。
+    
+    \item \textbf{慧差（Spherical Aberration）}：
+    
+    慧差是由于球面透镜或球面镜面的几何形状限制而引起的。当光线通过球面透镜或球面镜面时，焦点位置不再是一个确定的点，而是在一定的范围内分散，使成像产生模糊、失真或虚影。
+    
+    慧差的解决方法包括使用非球面透镜或透镜组合、添加补偿光学元件等。非球面透镜具有非常复杂的曲率，可以根据需要设计，使光线聚焦到更小的焦点上，从而减小慧差带来的影响，提高成像质量。
+    
+在光学系统设计中，通常需要综合考虑色差和慧差以及其他光学畸变，以确保获得高质量的成像效果。这涉及到对光学元件的选择、设计和优化，以满足特定应用的要求。
+
+\end{enumerate}
+
+
+
+	
+	
+	
+	% 实验前思考题
+	\subsection{实验前思考题}
+	
+	% 思考题1
+	\begin{question}
+		慧差与孔径、视场的关系？
+	\end{question}
+	\begin{enumerate}
+		\item \textbf{慧差与孔径、视场的关系}：
+		\begin{enumerate}
+			\item 慧差与孔径的关系：
+		
+				随着孔径的增大，慧差的影响会增加。
+				较大的孔径会导致更多的光线经过光学元件的边缘部分，而慧差通常是由于边缘部分的光线与中心部分的光线聚焦位置不同而引起的。因此，较大的孔径会加剧慧差的影响。
+			
+			
+			\item 慧差与视场的关系：
+			\
+				视场的大小也会影响慧差的表现。当视场较大时，光线来自不同方向和角度的目标会聚焦在像平面上不同的位置，这可能会加剧慧差现象。特别是对于较大的视场，由于不同位置的光线需要通过透镜或镜面，而不同位置的光线折射程度可能会有所不同，导致成像的模糊和失真现象更加显著。
+			
+		\end{enumerate}
+	\end{enumerate}
+	
+	% 思考题2
+	\begin{question}
+		2.	产生色差原因？列举几种消色差的方法
+	\end{question}
+	产生色差原因见实验原理。\\
+	以下是几种消色差的方法：
+\begin{enumerate}
+    \item 使用复合透镜，由不同玻璃材料制成，以抵消不同波长光线的色散效应。
+    \item 使用非球面透镜，具有非球形曲率，可以根据需要设计，减少色差现象。
+    \item 使用消色差棱镜，由不同材料制成的棱镜组合，减少色差。
+    \item 使用色散补偿镜片，设计用于校正色散，使得不同波长的光线具有相同的光程，减少色差效应。
+\end{enumerate}
+	% 思考题3
+	\begin{question}
+		针孔滤波的工作原理
+	\end{question}
+	针孔滤波器的工作原理基于衍射现象。当光线通过非常小的孔口时，光波会在孔边缘发生衍射，形成一系列明暗相间的环形条纹或衍射图样。\\
+
+针孔滤波器的工作原理主要包括以下几点：
+\begin{enumerate}
+    \item 衍射效应：光线通过针孔时会发生衍射现象，使光在屏幕上形成衍射图样。
+    \item 孔径大小：针孔的直径决定了衍射图样的特征，较小的孔径会产生更多的衍射效应。
+    \item 滤波作用：针孔滤波器用于滤波或选择特定波长范围的光，通过选择合适的孔径大小和观察位置实现滤波效果。
+    \item 分辨能力：针孔滤波器的分辨能力取决于孔径的大小，较小的孔径具有更好的分辨能力。
+\end{enumerate}
+
+因此，针孔滤波器可以根据衍射现象实现光学滤波的目的
+	% ---
+	
+	
+	
+	% 实验记录	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\centering
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业： & 物理学 & 年级： & 2022级 \\
+			\hline
+			姓名： &  & 学号： & \\
+			\hline
+			室温： &  & 实验地点： & A522 \\
+			\hline
+			学生签名：& 见\textbf{附件}部分 & 评分： &\\
+			\hline
+			实验时间：& 2024// & 教师签名：&\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	% ---
+	
+	% 实验过程记录
+	\subsection{实验内容、步骤与结果}
+	
+	%
+	\subsubsection{操作步骤记录}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item \begin{table}[h]
+			\centering
+			\caption{表格示例}
+			\label{tab:tab1}
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				组1/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
+				$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
+				\hline
+				组2/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
+				$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
+				\hline
+				组3/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
+				$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
+				\hline
+			\end{tabular}
+		\end{table}		
+	\end{enumerate}
+	
+	% ---
+	
+	% 原始数据
+	\clearpage
+	\subsection{原始数据记录}
+	实验记录本上的原始数据见%\cref{}（签字）。
+	
+	实验台桌面整理见%\textbf{附件}部分(\cref{})。
+	
+	其它原始数据见%\cref{}。
+	% ---
+	
+	% 问题记录
+	\subsection{实验过程遇到问题及解决办法}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 分析与讨论	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业：& 物理学 &年级：& 2022级\\
+			\hline
+			姓名： &  & 学号：& \\
+			\hline
+			日期：&  & 评分： &\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	% ---
+	
+	% 数据处理
+	\subsection{实验数据分析}
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	
+	%
+	\subsubsection{}
+	
+	% ---
+	
+	% 实验后思考题
+	\subsection{实验后思考题}
+	
+	%思考题1
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题2
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题3
+	\begin{question}
+		
+	\end{question}
+	
+	% ---
+	
+	
+	% 结语部分
+	\clearpage
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 结语}
+	% ---
+	
+	% 总结、杂谈与致谢
+	\subsection{实验心得和体会、意见建议等}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+
+	% 附件
+	\subsection{附件及实验相关的软硬件资料等}
+	试验台桌面整理如%\cref{}所示。
+	
+	实验报告个人签名如
+
+	% ---
+	
+	
+\end{document}
