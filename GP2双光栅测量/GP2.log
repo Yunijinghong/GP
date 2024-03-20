@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  20 MAR 2024 21:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  21 MAR 2024 00:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1204,14 +1204,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
+File: ./images//签字.jpg Graphic file (type bmp)
+<./images//签字.jpg>
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 234.
+(hyperref)                replaced by space on input line 235.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 234.
+(hyperref)                removing `\heiti' on input line 235.
 
 File: images/实验剪影1.jpg Graphic file (type bmp)
 <images/实验剪影1.jpg>
@@ -1257,11 +1260,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 354.
+(hyperref)                replaced by space on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 354.
+(hyperref)                removing `\heiti' on input line 355.
 
 File: images/505.6.jpg Graphic file (type bmp)
 <images/505.6.jpg>
@@ -1277,9 +1280,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [11
 
 ]
-File: images/改变有效质量.png Graphic file (type bmp)
-<images/改变有效质量.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1288,6 +1288,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
+File: images/改变有效质量.png Graphic file (type bmp)
+<images/改变有效质量.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1299,11 +1302,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 425.
+(hyperref)                replaced by space on input line 429.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 425.
+(hyperref)                removing `\heiti' on input line 429.
 
 File: images/桌面.jpg Graphic file (type bmp)
 <images/桌面.jpg>
@@ -1326,13 +1329,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `GP2.out' has not changed.
-(rerunfilecheck)             Checksum: 2FFEC9564649B82B2E0FB629D12D1331;2913.
+(rerunfilecheck)             Checksum: 18D389A79A935DCCE31C3E3E9BB2D0CA;3019.
  ) 
 Here is how much of TeX's memory you used:
- 38243 strings out of 476683
- 828222 string characters out of 5807575
+ 38256 strings out of 476683
+ 828444 string characters out of 5807575
  1883012 words of memory out of 5000000
- 57846 multiletter control sequences out of 15000+600000
+ 57856 multiletter control sequences out of 15000+600000
  519917 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,427b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
