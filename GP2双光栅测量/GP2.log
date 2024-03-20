@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  20 MAR 2024 01:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  20 MAR 2024 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -895,7 +895,8 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
  (d:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count380
-)) (./GP2.aux)
+))
+No file GP2.aux.
 \openout1 = `GP2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -974,7 +975,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 11.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1010,9 +1010,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 11.
-(./GP2.out) (./GP2.out)
 \@outlinefile=\write4
 \openout4 = `GP2.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -1020,7 +1022,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count381
- (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd) (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd) (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd)
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1086,7 +1088,21 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- (./GP2.toc
+
+No file GP2.toc.
+\tf@toc=\write5
+\openout5 = `GP2.toc'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3
+
+]
 
 Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1111,25 +1127,6 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
-
-LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 1.
-
-)
-\tf@toc=\write5
-\openout5 = `GP2.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[3
-
-]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
@@ -1208,9 +1205,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [7
 
 ]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 270.
+File: images/错误.jpg Graphic file (type bmp)
+<images/错误.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1229,20 +1225,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 345.
+(hyperref)                replaced by space on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 345.
+(hyperref)                removing `\heiti' on input line 354.
 
-Missing character: There is no Н (U+041D) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no Н (U+041D) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no Н (U+041D) in font [lmroman8-regular]:mapping=tex-text;!
-Missing character: There is no Н (U+041D) in font [lmroman6-regular]:mapping=tex-text;!
 File: images/505.6.jpg Graphic file (type bmp)
 <images/505.6.jpg>
+File: images/振幅曲线.png Graphic file (type bmp)
+<images/振幅曲线.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1250,9 +1252,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10
+[11
 
 ]
+File: images/改变有效质量.png Graphic file (type bmp)
+<images/改变有效质量.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1260,16 +1265,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 388.
+(hyperref)                replaced by space on input line 425.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 388.
+(hyperref)                removing `\heiti' on input line 425.
 
+File: images/桌面.jpg Graphic file (type bmp)
+<images/桌面.jpg>
+File: images/原始数据.jpg Graphic file (type bmp)
+<images/原始数据.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1277,12 +1294,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12
+[14
 
 ] (./GP2.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -1292,16 +1306,16 @@ Package rerunfilecheck Warning: File `GP2.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `GP2.out':
-(rerunfilecheck)             Before: D148F51D06E59A54C428760310B9987E;2693
-(rerunfilecheck)             After:  6CAEAE84F5712AF62485E15702829E31;2903.
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  2FFEC9564649B82B2E0FB629D12D1331;2913.
  ) 
 Here is how much of TeX's memory you used:
- 38232 strings out of 476683
- 828894 string characters out of 5807575
+ 38226 strings out of 476683
+ 828066 string characters out of 5807575
  1883012 words of memory out of 5000000
- 57840 multiletter control sequences out of 15000+600000
- 519917 words of font info for 90 fonts, out of 8000000 for 9000
+ 57835 multiletter control sequences out of 15000+600000
+ 519933 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,427b,970s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,107p,427b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on GP2.pdf (12 pages).
+Output written on GP2.pdf (14 pages).
