@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  20 MAR 2024 22:10
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  21 MAR 2024 19:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1150,7 +1150,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
@@ -1162,15 +1162,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
+File: ./images//签字.jpg Graphic file (type bmp)
+<./images//签字.jpg>
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 245.
+(hyperref)                replaced by space on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 245.
+(hyperref)                removing `\heiti' on input line 244.
 
+File: ./images//位置色差.png Graphic file (type bmp)
+<./images//位置色差.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1181,6 +1186,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6
 
 ]
+File: ./images//慧差光路.png Graphic file (type bmp)
+<./images//慧差光路.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1188,17 +1196,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7
-
-]
+[7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 322.
+(hyperref)                replaced by space on input line 334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 322.
+(hyperref)                removing `\heiti' on input line 334.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1213,11 +1219,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 370.
+(hyperref)                replaced by space on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 370.
+(hyperref)                removing `\heiti' on input line 382.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1233,13 +1239,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `GP4光学像差测量与分析1.out' has not changed.
-(rerunfilecheck)             Checksum: DD0E5EA33321972FA522A3E303D9DA4D;2357.
+(rerunfilecheck)             Checksum: 10E400E897788B8B1ADD71F2CD0F5218;2331.
  ) 
 Here is how much of TeX's memory you used:
- 37968 strings out of 476683
- 819577 string characters out of 5807575
+ 38016 strings out of 476683
+ 820812 string characters out of 5807575
  1877012 words of memory out of 5000000
- 57598 multiletter control sequences out of 15000+600000
+ 57638 multiletter control sequences out of 15000+600000
  519201 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,437b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
