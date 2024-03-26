@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  22 MAR 2024 14:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  26 MAR 2024 14:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1241,6 +1241,8 @@ File: ./images//顺时针15.jpg Graphic file (type bmp)
 <./images//顺时针15.jpg>
 File: ./images//顺时针20.jpg Graphic file (type bmp)
 <./images//顺时针20.jpg>
+File: ./images//错误.jpg Graphic file (type bmp)
+<./images//错误.jpg>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1302,10 +1304,10 @@ Package rerunfilecheck Info: File `GP4光学像差测量与分析1.out' has not 
 (rerunfilecheck)             Checksum: 5847D477C5FD19136307A9DCA2261CDB;2447.
  ) 
 Here is how much of TeX's memory you used:
- 38195 strings out of 476683
- 824543 string characters out of 5807575
+ 38231 strings out of 476683
+ 826263 string characters out of 5807575
  1877012 words of memory out of 5000000
- 57806 multiletter control sequences out of 15000+600000
+ 57841 multiletter control sequences out of 15000+600000
  519201 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,437b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
