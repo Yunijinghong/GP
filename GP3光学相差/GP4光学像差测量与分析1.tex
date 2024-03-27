@@ -4,6 +4,7 @@
 \usepackage{lipsum}
 \usepackage{adjustbox}
 \usepackage{subcaption}
+\usepackage{indentfirst}
 
 %\usepackage{mathrsfs} % 字体
 %\captionsetup[figure]{name=Figure} % 图片形式
@@ -20,7 +21,7 @@
 			\hline
 			\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
 			\hline
-			\LARGE25 & & \LARGE25 & & \LARGE30 & & \LARGE80 & \\
+			\LARGE20 & & \LARGE30 & & \LARGE30 & & \LARGE80 & \\
 			\hline
 		\end{tabularx}
 	\end{table}
@@ -31,7 +32,7 @@
 		\renewcommand\arraystretch{1.7}
 		\begin{tabularx}{\textwidth}{|X|X|X|X|}
 			\hline
-			年级、专业： & 2022级 物理学 &组号：教学班1 & \\
+			年级、专业： & 2022级 物理学 &组号： & 教学班1\\
 			\hline
 			姓名： & 黄罗琳   & 学号： &22344001   \\
 			\hline
@@ -105,7 +106,7 @@
 			\hline
 			
 			\textbf{产品编号} & \textbf{产品名称} & \textbf{规格}          & \textbf{数量} \\ \hline
-			1                & 激光光源           & λ=632.6nm            & 1            \\ \hline
+			1                & 激光光源           & 波长=632.6nm            & 1            \\ \hline
 			2                & 激光器夹持器       & 3维调整               & 1            \\ \hline
 			3                & 显微物镜           & 10×/0.25             & 1            \\ \hline
 			4                & 针孔               & Ø100um或Ø50um       & 1            \\ \hline
@@ -139,7 +140,7 @@
 当光线穿过透镜或其他光学元件时，由于光的波长不同，其在介质中的折射率也会有所不同。这导致了色差和慧差这两种光学现象的产生。
 
 \begin{enumerate}
-    \item \textbf{色差（Chromatic Aberration）}：
+    \item \textbf{色差}：
     
     色差主要由两个因素引起：球面色差和色散色差。
     
@@ -151,7 +152,7 @@
     
     解决色差问题的方法包括使用复合透镜、消色差镜片、非球面透镜等，以及在设计光学系统时考虑到色差校正的需求。
     
-    \item \textbf{慧差（Spherical Aberration）}：
+    \item \textbf{慧差}：
     
     慧差是由于球面透镜或球面镜面的几何形状限制而引起的。当光线通过球面透镜或球面镜面时，焦点位置不再是一个确定的点，而是在一定的范围内分散，使成像产生模糊、失真或虚影。
     
@@ -204,14 +205,15 @@
 	\begin{question}
 		针孔滤波的工作原理
 	\end{question}
-	针孔滤波器的工作原理基于衍射现象。当光线通过非常小的孔口时，光波会在孔边缘发生衍射，形成一系列明暗相间的环形条纹或衍射图样。\\
-
-针孔滤波器的工作原理主要包括以下几点：
+	针孔滤波器的工作原理基于衍射现象。当光线通过非常小的孔口时，光波会在孔边缘发生衍射，形成一系列明暗相间的环形条纹或衍射图样。主要包括以下几点：
 \begin{enumerate}
-    \item 衍射效应：光线通过针孔时会发生衍射现象，使光在屏幕上形成衍射图样。
-    \item 孔径大小：针孔的直径决定了衍射图样的特征，较小的孔径会产生更多的衍射效应。
-    \item 滤波作用：针孔滤波器用于滤波或选择特定波长范围的光，通过选择合适的孔径大小和观察位置实现滤波效果。
-    \item 分辨能力：针孔滤波器的分辨能力取决于孔径的大小，较小的孔径具有更好的分辨能力。
+	
+
+	\item 点光源会聚：针孔滤波器利用激光的特性，将其会聚成一个非常小的点光源。这个点光源近似于理想的球面波，对光学系统非常有用。
+	\item 高度相干性激光：激光具有高度的相干性，但同时也容易受到空中灰尘、光学元件或激光本身产生的散射光的干扰。
+	\item 杂散光的干扰：在激光会聚的点上，放置一个小孔（针孔）。这个针孔的直径通常约为25微米，如果使用10倍显微镜物镜聚焦。针孔的作用类似于无线电中的滤波器，它不允许其他空间频率的光通过，从而阻止了杂散光的干扰。
+	\item 滤波效果：针孔滤波器的作用是过滤掉杂散光，使得会聚点上的成像更清晰。
+	总之，针孔滤波器在光学系统中起到类似滤波器的作用，确保只有理想的点光源通过，从而提高成像的质量。
 \end{enumerate}
 
 因此，针孔滤波器可以根据衍射现象实现光学滤波的目的
@@ -232,7 +234,7 @@
 			\hline
 			姓名： & 黄罗琳 & 学号： &22344001 \\
 			\hline
-			室温： & 23℃ & 实验地点： & A522 \\
+			室温： & 23℃ & 实验地点： & A512 \\
 			\hline
 			学生签名：& \includegraphics[width=1cm]{签字.jpg} & 评分： &\\
 			\hline
@@ -258,7 +260,7 @@
 \item 色差测量实验
 
 	\begin{enumerate}
-		\item 按图示光路，先摆放溴钨灯、透镜、白屏，调整透镜4的中心高与光源等高，使光源在透镜4的物方1~2倍焦距处，调整白屏的位置，找到溴钨灯灯丝最清晰的像位置，并记录该位置；
+		\item 按图示光路，先摆放溴钨灯、透镜、白屏，调整透镜4的中心高与光源等高，使光源在透镜4的物方1-2倍焦距处，调整白屏的位置，找到溴钨灯灯丝最清晰的像位置，并记录该位置；
 		\item 按图示光路，放置滤光片1，调整白屏的位置，找到溴钨灯丝最清晰的像位置并记录白屏位置；
 		\item 更换为滤光片2，再调整白屏的位置，找到这时溴钨灯丝最清晰的像位置并记录白屏位置；
 		\item 计算位置色差；判断波长与折射率之间的关系。
@@ -289,6 +291,31 @@
 	\end{figure}
 \end{enumerate}
 \subsubsection{实验原始数据}
+\begin{enumerate}
+	\item 色差测量实验：\\$f=100mm$\\
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			仪器& 位置 (cm) \\
+			\hline
+			白光灯 & 30.0 \\
+			透镜 & 47.30 \\
+			无滤光片 & 72.70 \\
+			蓝色滤光片 & 72.02 \\
+			红色滤光片 & 73.35 \\
+			\hline
+		\end{tabular}
+		\caption{光学器件位置}
+		\label{tab:positions}
+	\end{table}
+	      
+	\item 慧差测量实验：\\\textbf{透镜向逆时针方向旋转，彗尾向右；顺时针方向旋转，彗尾向左。}
+
+	
+	    
+	      
+\end{enumerate}
 
 \subsubsection{实验图像汇总}
 \begin{figure}[H]
@@ -342,19 +369,19 @@
 	\begin{minipage}[b]{0.3\linewidth}
 	  \centering
 	  \includegraphics[width=\linewidth]{顺时针10.jpg}
-	  \caption{顺时针10}
+	  \caption{顺时针10°}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\linewidth}
 	  \centering
 	  \includegraphics[width=\linewidth]{顺时针15.jpg}
-	  \caption{顺时针15}
+	  \caption{顺时针15°}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.3\linewidth}
 	  \centering
 	  \includegraphics[width=\linewidth]{顺时针20.jpg}
-	  \caption{顺时针20}
+	  \caption{顺时针20°}
 	\end{minipage}
   \end{figure}
 
@@ -405,22 +432,42 @@
 	% ---
 	
 	% 数据处理
-	\subsection{实验数据分析}
+	\subsection{实验数据处理}
 	
 	%
-	\subsubsection{}
+	\subsubsection{色差测量实验}
+	
+		\begin{table}[htbp]
+			\centering
+			\begin{tabular}{|c|c|}
+				\hline
+				仪器& 位置 (cm) \\
+				\hline
+				白光灯 & 30.0 \\
+				透镜 & 47.30 \\
+				无滤光片 & 72.70 \\
+				蓝色滤光片 & 72.02 \\
+				红色滤光片 & 73.35 \\
+				\hline
+			\end{tabular}
+			\caption{实验数据}
+			\label{tab:positions}
+		\end{table}
+		根据位置色差公式： $$\Delta L_{FC}^{\prime}=L_F^{\prime}-L_c^{\prime}$$\\
+		\indent 代入位置数据得：$$\Delta L_{FC}^{\prime}=-1.33\textit{cm}$$\\
+		\indent \textbf{分析数据可知，折射率越大，波长越小。}
+
+	
+	%
+	\subsubsection{慧差测量实验}
 	\begin{enumerate}
-		\item 
+		\item 在焦点处弥散斑最小，之后调整角度后弥散斑均会变大。
+		\item \textbf{透镜向逆时针方向旋转，彗尾向右；顺时针方向旋转，彗尾向左。}
+		\item 慧差的大小与角度成正比，最后逐渐无法观察图像。
+
 	\end{enumerate}
 	
-	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}
 	
-	%
-	\subsubsection{}
 	
 	% ---
 	
@@ -429,45 +476,58 @@
 	
 	%思考题1
 	\begin{question}
-		
+		有没有办法通过图像计算光学系统的像差？请给出方法说明。如果通过相机采集图像进行判断的话，相机象元尺寸应如何选择？
 	\end{question}
-	
-	% 思考题2
-	\begin{question}
-		
-	\end{question}
-	
-	% 思考题3
-	\begin{question}
-		
-	\end{question}
-	
-	% ---
-	
-	
+	当光学系统对相干照明物体或自发光物体进行成像时，我们可以将物体上的光强分布视为无数个具有不同强度的独立发光点的集合。每一个发光点经过光学系统后，由于衍射、像差以及其他工艺疵病的影响，在像面处得到的星点像光强分布呈现为一个弥散光斑，即点扩散函数PSF。在等晕区内，每个光斑都具有完全相似的分布规律，像面光强分布是所有星点像光强的叠加结果。因此，星点像光强分布规律决定了光学系统成像的清晰度。[1]PSF描述了光学系统中单个点源所产生的像。通过分析PSF，可以确定系统中的各种像差.
+
+下面是一种简单的方法说明：
+
+首先，需要通过光学系统拍摄一些测试图像，然后计算点扩散函数,对于每个图像，可以通过将其与理想的点源或线源进行比较来计算其PSF。可以使用各种图像处理技术，如傅里叶变换来计算PSF。
+
+分析PSF：一旦得到了PSF，就可以分析它以确定系统中的各种像差。例如，球差可能表现为PSF的不对称性，而色差可能导致不同波长的光具有不同的焦点位置。
+
+选择相机象元尺寸：在使用相机采集图像时，相机的象元尺寸应根据所需的空间分辨率和灵敏度进行选择。一般来说，较小的象元尺寸可以提供更高的空间分辨率，但可能需要更多的光量来获得足够的信噪比。因此，选择相机的象元尺寸需要在空间分辨率和信噪比之间进行权衡。
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.6\linewidth]{检测.png}
+	\caption{检测系统功能图[1]}
+	\label{}
+\end{figure}
+具体实验原理摘自：[1]朱瑶.光学系统的星点检验方法[J].红外,2004(09):31-37.
+
 	% 结语部分
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{CD1 光学像差测量与分析 \quad\heiti 结语}
 	% ---
 	
 	% 总结、杂谈与致谢
 	\subsection{实验心得和体会、意见建议等}
 	\begin{enumerate}
 		\item 实验要求很大的耐心，例如实验主光路的调整会存在高度的问题，需要进行一次又一次的调整，秉持着“就高又就低”的原则，既要保证有最低高度限制的设备能够进入光路，也要保证最高有效调整高度的仪器能够稳定调节高低（五维调整机构），所以也要在试验一次次探索中了解到实验仪器的合适的高度区间。
-		\item 对于实验总体效果，我发现了在实验一中，我在调整色差时会出现灯丝的像很亮从而无法分辨哪一个位置是最清晰的，我们可以同 
+		\item 对于实验总体效果，我发现了在实验一中，我在调整色差时会出现灯丝的像很亮从而无法分辨哪一个位置是最清晰的，\textbf{我们可以使用添加在实验二中用到的衰减片，这样会很明显的找到像最清晰的地方}
 	\end{enumerate}
 	% ---
 	
 
 	% 附件
-	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
+	\subsection{附件}
+	试验台桌面整理
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.2\linewidth]{桌面.jpg}
+		\caption{桌面}
+		\label{}
+	\end{figure}
+	实验数据
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.2\linewidth]{数据}
+		\caption{实验数据与签字}
+		\label{}
+	\end{figure}
 	
-	实验报告个人签名如
 
-	% ---
-	
 	
 \end{document}
