@@ -1,0 +1,351 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+\input{Settings} 
+\usepackage{lipsum}
+\usepackage{adjustbox}
+%\usepackage{mathrsfs} % 字体
+%\captionsetup[figure]{name=Figure} % 图片形式
+%\captionsetup[table]{name=Table} % 表格形式
+\begin{document}
+	
+	% 实验报告封面	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{
+				|X|X|X|X
+				|X|X|X|X|}
+			\hline
+			\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
+			\hline
+			\LARGE25 & & \LARGE25 & & \LARGE30 & & \LARGE80 & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 信息栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			年级、专业： & 2022级 物理学 &组号： &实验组1 \\
+			\hline
+			姓名： &   黄罗琳 & 学号： &22344001   \\
+			\hline
+			实验时间： & 2024/3/28 & 教师签名： & \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 大标题
+	\begin{center}
+		\LARGE CC1 \quad 热辐射的测量
+
+	\end{center}
+	% ---
+	
+	% 注意事项
+	
+	% 基本
+	\textbf{【实验报告注意事项】}
+	\begin{enumerate}
+		\item 实验报告由三部分组成：
+		\begin{enumerate}
+			\item 预习报告：课前认真研读实验讲义，弄清实验原理；实验所需的仪器设备、用具及其使用、完成课前预习思考题；了解实验需要测量的物理量，并根据要求提前准备实验记录表格（可以参考实验报告模板，可以打印）。\textcolor{red}{\textbf{（20分）}}
+			\item 实验记录：认真、客观记录实验条件、实验过程中的现象以及数据。实验记录请用珠笔或者钢笔书写并签名（\textcolor{red}{\textbf{用铅笔记录的被认为无效}}）。\textcolor{red}{\textbf{保持原始记录，包括写错删除部分，如因误记需要修改记录，必须按规范修改。}}（不得输入电脑打印，但可扫描手记后打印扫描件）；离开前请实验教师检查记录并签名。\textcolor{red}{\textbf{（30分）}}
+			\item 数据处理及分析讨论：处理实验原始数据（学习仪器使用类型的实验除外），对数据的可靠性和合理性进行分析；按规范呈现数据和结果（图、表），包括数据、图表按顺序编号及其引用；分析物理现象（含回答实验思考题，写出问题思考过程，必要时按规范引用数据）；最后得出结论。\textcolor{red}{\textbf{（30分）}}
+		\end{enumerate}
+		\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。\textcolor{red}{（80分）}}
+		\item 每次完成实验后的一周内交\textbf{实验报告}（特殊情况不能超过两周）。
+		\item \textbf{其它注意事项}：
+		\begin{enumerate}
+			\item 请认真查看并理解实验讲义第一章内容；
+			\item 注意实验器材的合理使用；
+			\item 使用结束使用各种仪器之后需要将其放回原位。
+		\end{enumerate}
+	\end{enumerate}
+	
+	% 安全
+	\textbf{【实验安全注意事项】}	
+	\begin{itemize}
+		\item 实验过程中，禁止触摸辐射体表面，一方面是避免在高温时烫伤；另一方面避免污染表面，影响发射系数。
+		\item 测量不同辐射表面对辐射强度影响时，辐射温度不要设置太高，更换辐射体时，应带手套。
+		\item 实验过程中，计算机在采集数据时不要触摸测试架，以免造成对传感器的干扰。
+		\item 在使用控温程序时，要留意程序是否正常运行，若运行有问题，请及时关闭可编程直流电源的输出，防止辐射器温度过高而损坏。停止运行程序时，要用程序的Stop output按钮，不要用菜单键的红色强制终止按钮。
+		\item 辐射传感器上方有一块金属挡板。在测量时将挡板移开；非测量时关上，避免不必要的触碰污染传感器表面。
+	  \end{itemize}
+	
+	% 目录
+	\clearpage
+	\tableofcontents
+	\clearpage
+	% ---
+	
+	
+	
+	% 预习报告	
+	
+	% 小标题 
+	\setcounter{section}{0}
+	\section{CC1 热辐射的测量 \quad\heiti 预习报告}
+	% ---
+	
+	% 实验目的
+	\subsection{实验目的}
+	\begin{enumerate}
+	\item 认识热辐射现象及其本质（普遍存在的一种能量转换与传递的形式）。
+	\item 认识影响热辐射强度的各种因素及其与热辐射强度的定量关系，包括：辐射体表面温度、辐射距离、表面的发射系数等。
+	\item 了解热辐射传感器（SMTIR9902）原理和结构、使用（含校正）方法。
+	\item 学习应用LabView管理由具有NI通信协议的非NI专业仪器（数字多用表）、设备（程控电源）构成的实验系统。
+
+	\end{enumerate}
+	% ---
+	
+	% 仪器用具
+	\subsection{仪器用具}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.6}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\text{编号} & \text{仪器用具名称} & \text{数量} & \text{主要参数} \\
+\hline
+1 & \text{黑体辐射与红外测量装置} & 1 & \text{DHRH-B: 含带标尺、位移导轨、辐射器、热辐射传感} \\
+\hline
+2 & \text{数字多用表} & 2 & \text{RIGOL DM3058E} \\
+\hline
+3 & \text{程控电源} & 1 & \text{RIGOL DP831} \\
+\hline
+4 & \text{计算机} & 1 & \text{已安装 LabView 和控温软件} \\
+\hline
+\end{tabular}
+	\end{table}
+	% ---
+	
+	% 原理概述
+	\subsection{原理概述}
+	\begin{enumerate}
+		\item 热辐射是物体由于温度而发出的电磁波现象，是热量传递的一种方式之一。温度高于绝对零度的物体都会产生热辐射，温度越高，辐射总能量越大，短波成分也越多。热辐射的光谱是连续的，波长范围从0到无穷，主要包括波长较长的可见光和红外线。由于电磁波的传播无需介质，热辐射是在真空中唯一的传热方式。
+    
+    \item 热辐射的特点包括：任何温度高于0K的物体都会不断地向周围空间发出热辐射；它可以在真空和空气中传播；伴随能量形式的转变；具有强烈的方向性；辐射能与温度和波长有关；发射辐射取决于温度的4次方。
+    
+    \item 热辐射的强度和频率分布与辐射体的温度和性质有关。如果辐射体对电磁波的吸收和辐射达到平衡，则热辐射的特性将只取决于温度，与其他特性无关，称为平衡辐射。
+    
+    \item 测量热辐射的原理是利用物体对电磁波的吸收、反射和透射等特性来确定物体的温度、表面积、黑度等参数。黑度是指物体吸收单位波长间隔内的辐射通量与入射到该物体的辐射通量之比。黑度越大，说明物体吸收和辐射能力越强，反之则越弱。
+    
+    \item 实验中，能量的传递过程包括：加热装置将电能转化为热能；辐射体将热能转化为辐射能；传感器将辐射能转化为热能。
+    
+    \item 辐射器包含加热装置和控温装置。加热装置通过连接到直流电源的陶瓷加热片进行加热；控温装置中，PT1000温度传感器可实时测量辐射体的温度，并通过PID温控系统对辐射体进行温度控制。
+    
+    \item 辐射传感器由热电偶串联组成，其中热电偶的热端接收辐射能，冷端与传感器外壳相连。当吸热面吸收热量时，热端温度升高，热电偶两端产生温度差，从而产生电势差。因此，辐射通量越大，温差越大，输出电压越大。SMTIR9902的输出信号与当地从辐射方向进入的辐射强度或能流密度成正比。
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 实验前思考题
+	\subsection{实验思考题题}
+	
+	% 思考题1
+	\begin{question}
+		人体热辐射会对 SMTIR9902 系列传感器读数产生影响（自己可验证），如何消除这种影响？日光灯是否有影响呢？这种传感器是否适合测量高温热辐射，为什么？
+	\end{question}
+	人体的一部分能量以电磁波的形式散射出体表，其中大部分为红外线。这些红外线的能量在人体热量散发中起着关键作用，被称为人体红外辐射。\\
+日光灯的光谱主要集中在可见光范围内，且距离传感器较远，其影响和忽略不计。因此，在使用SMTIR9902系列传感器时，通常不需要考虑日光灯的光谱对传感器的影响。\\
+ SMTIR9902系列传感器的传感器温度范围是-20°C到100°C。如果超出这个范围，传感器将会受到损坏。因此，在应用中需要注意确保传感器的工作温度在这个范围内，以防止传感器损坏。\\
+	% 思考题2
+	\begin{question}
+		如果对辐射体制冷，使辐射表面温度低于室温（传感器温度），辐射传感器输出信号会如何变化？
+	\end{question}
+	如果对辐射体进行制冷，使其辐射表面的温度低于室温（传感器温度），传感器将不再向外辐射，而是会吸收来自环境中其他物体的辐射。因此，传感器接收到的净红外辐射强度会减小，进而导致输出信号减小。这种情况下，传感器的响应将受到制冷影响，需要考虑这一因素在内，以确保传感器能够正常工作并提供准确的测量数据。
+	% 思考题3
+	\begin{question}
+		按辐射定律，处于室温的物体也有辐射，为何辐射传感器的输出信号为零？如果要直接测量该物体的辐射强度（辐射传感器输出信号正比于辐射强度），环境（传感器外壳）温度应该多高？ 如果环境（传感器外壳）温度维持在室温附近但温度有变化， 是否可以通过数学方法扣除（非绝对零度的）环境温度的影响？（对给定辐射源温度， 传感器外壳温度与辐射传感器读数之间是什么关系？ 提示，热辐射传感器内置Ni1000可以测量外壳的温度，其分度表见附录2）
+	\end{question}
+
+	处于室温的物体与传感器温度相同，二者发出的红外辐射也相同，因此传感器接收到的净红外辐射强度就为零，即辐射传感器的输出信号为零。为了使得传感器能够检测到物体的红外辐射，需要使环境（传感器外壳）的温度低于物体的温度。这样，物体就会向环境发射净红外辐射，而不是吸收净红外辐射。通过数学方法，可以扣除（非绝对零度的）环境温度的影响，以便更准确地测量物体的红外辐射强度。
+	\begin{question}
+		辐射体的加热功率与辐射体温度之间呈何关系？与辐射传感器的信号值之间呈何关系？为什么？
+	\end{question}
+	由斯特藩-玻尔兹曼定律可知：$R_T = \sigma T^4$，即辐射体的加热功率与辐射体温度的四次方成正比。这意味着随着温度的升高，辐射体释放的热量迅速增加。\\
+
+辐射体的加热功率与辐射传感器的信号值之间的关系取决于辐射体的温度、表面发射率和波长。一般来说，辐射传感器的输出电压正比于辐射强度，而辐射强度又与辐射体的温度和表面的发射率有关。不同表面的发射率不同，吸收性能好的物体辐射性能也更好。\\
+
+此外，辐射体的光谱辐射功率密度与波长的五次方成反比。这意味着辐射体在不同波长的辐射能量分布不同，随着温度升高，峰值波长向短波方向移动。这些特性都符合热辐射的基本科学原理，对于理解和应用辐射传感器具有重要意义。\\
+	
+	% ---
+	
+	
+	
+	% 实验记录	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\centering
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业： & 物理学 & 年级： & 2022级 \\
+			\hline
+			姓名： &  & 学号： & \\
+			\hline
+			室温： &  & 实验地点： & A522 \\
+			\hline
+			学生签名：& 见\textbf{附件}部分 & 评分： &\\
+			\hline
+			实验时间：& 2024// & 教师签名：&\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	% ---
+	
+	% 实验过程记录
+	\subsection{实验内容、步骤与结果}
+	
+	%
+	\subsubsection{操作步骤记录}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item \begin{table}[h]
+			\centering
+			\caption{表格示例}
+			\label{tab:tab1}
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				组1/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
+				$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
+				\hline
+				组2/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
+				$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
+				\hline
+				组3/序号i & 1 & 2 & 3 & 4 & 5 \\
+				$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
+				$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
+				\hline
+			\end{tabular}
+		\end{table}		
+	\end{enumerate}
+	
+	% ---
+	
+	% 原始数据
+	\clearpage
+	\subsection{原始数据记录}
+	实验记录本上的原始数据见%\cref{}（签字）。
+	
+	实验台桌面整理见%\textbf{附件}部分(\cref{})。
+	
+	其它原始数据见%\cref{}。
+	% ---
+	
+	% 问题记录
+	\subsection{实验过程遇到问题及解决办法}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+	
+	
+	% 分析与讨论	
+	\clearpage
+	
+	% 顶栏
+	\begin{table}
+		\renewcommand\arraystretch{1.7}
+		\begin{tabularx}{\textwidth}{|X|X|X|X|}
+			\hline
+			专业：& 物理学 &年级：& 2022级\\
+			\hline
+			姓名： &  & 学号：& \\
+			\hline
+			日期：&  & 评分： &\\
+			\hline
+		\end{tabularx}
+	\end{table}
+	% ---
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	% ---
+	
+	% 数据处理
+	\subsection{实验数据分析}
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	
+	%
+	\subsubsection{}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	
+	%
+	\subsubsection{}
+	
+	% ---
+	
+	% 实验后思考题
+	\subsection{实验后思考题}
+	
+	%思考题1
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题2
+	\begin{question}
+		
+	\end{question}
+	
+	% 思考题3
+	\begin{question}
+		
+	\end{question}
+	
+	% ---
+	
+	
+	% 结语部分
+	\clearpage
+	
+	% 小标题
+	\section{ETX 实验名称××× \quad\heiti 结语}
+	% ---
+	
+	% 总结、杂谈与致谢
+	\subsection{实验心得和体会、意见建议等}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
+	% ---
+	
+
+	% 附件
+	\subsection{附件及实验相关的软硬件资料等}
+	试验台桌面整理如%\cref{}所示。
+	
+	实验报告个人签名如
+
+	% ---
+	
+	
+\end{document}
