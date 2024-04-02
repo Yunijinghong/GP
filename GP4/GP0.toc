@@ -3,19 +3,21 @@
 \contentsline {subsection}{\numberline {1.2}仪器用具}{4}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}原理概述}{4}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}实验思考题题}{5}{subsection.1.4}%
-\contentsline {section}{\numberline {2}ETX 实验名称××× \hskip 1em\relax \heiti 实验记录}{7}{section.2}%
+\contentsline {section}{\numberline {2}CC1 热辐射的测量 \hskip 1em\relax \heiti 实验记录}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}实验内容、步骤与结果}{7}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}操作步骤记录}{7}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}}{7}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}原始数据记录}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}实验过程遇到问题及解决办法}{8}{subsection.2.3}%
-\contentsline {section}{\numberline {3}ETX 实验名称××× \hskip 1em\relax \heiti 分析与讨论}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}实验数据分析}{9}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}}{9}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}}{9}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}}{9}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}实验后思考题}{9}{subsection.3.2}%
-\contentsline {section}{\numberline {4}ETX 实验名称××× \hskip 1em\relax \heiti 结语}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}实验心得和体会、意见建议等}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}附件及实验相关的软硬件资料等}{10}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {2.1.1}实验系统搭建}{7}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}测量物体的辐射面温度对辐射强度大小的影响}{8}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}测量在不同辐射距离在d的辐射传感器输出P }{8}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}测量不同物体表面的发射系数}{9}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}实验数据图像}{9}{subsubsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.2}实验过程遇到问题及解决办法}{10}{subsection.2.2}%
+\contentsline {section}{\numberline {3}CC1 热辐射的测量 \hskip 1em\relax \heiti 分析与讨论}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}实验数据分析}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}测量物体的辐射面温度对辐射强度大小的影响}{11}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}测量在不同辐射距离在 d 的辐射传感器输出P，拟合给出$P-d$之间的关系}{13}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}测量不同物体表面的发射系数}{14}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}实验后思考题}{14}{subsection.3.2}%
+\contentsline {section}{\numberline {4}CC1 热辐射的测量\hskip 1em\relax \heiti 结语}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验心得和体会}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}附件及实验相关的软硬件资料等}{16}{subsection.4.2}%
 \contentsfinish 

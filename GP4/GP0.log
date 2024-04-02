@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  27 MAR 2024 22:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  3 APR 2024 02:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -895,7 +895,56 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
  (d:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count380
-)) (./GP0.aux)
+)) (./GP0.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `tab:data_horizontal' multiply defined.
+
+
+LaTeX Warning: Label `tab:data_horizontal@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+)
 \openout1 = `GP0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1133,11 +1182,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 92.
+(hyperref)                replaced by space on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 92.
+(hyperref)                removing `\heiti' on input line 87.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1149,7 +1198,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 155--161
+Underfull \hbox (badness 10000) in paragraph at lines 150--156
 
  []
 
@@ -1161,17 +1210,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
@@ -1183,15 +1222,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
+File: ./images//签字.jpg Graphic file (type bmp)
+<./images//签字.jpg>
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 206.
+(hyperref)                replaced by space on input line 200.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 206.
+(hyperref)                removing `\heiti' on input line 200.
 
+File: ./images//接线.png Graphic file (type bmp)
+<./images//接线.png>
+File: ./images//仪器判断.png Graphic file (type bmp)
+<./images//仪器判断.png>
+File: ./images//程序.png Graphic file (type bmp)
+<./images//程序.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1209,17 +1257,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 283.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 283.
+[8]
+File: ./images//41-1.png Graphic file (type bmp)
+<./images//41-1.png>
+File: ./images//41-2.png Graphic file (type bmp)
+<./images//41-2.png>
+File: ./images//41-3.png Graphic file (type bmp)
+<./images//41-3.png>
+File: ./images//41-4.png Graphic file (type bmp)
+<./images//41-4.png>
+File: ./images//51-1.png Graphic file (type bmp)
+<./images//51-1.png>
+File: ./images//51-2.png Graphic file (type bmp)
+<./images//51-2.png>
+File: ./images//51-3.png Graphic file (type bmp)
+<./images//51-3.png>
+File: ./images//51-4.png Graphic file (type bmp)
+<./images//51-4.png>
+File: ./images//61-1.png Graphic file (type bmp)
+<./images//61-1.png>
+File: ./images//61-2.png Graphic file (type bmp)
+<./images//61-2.png>
+File: ./images//61-3.png Graphic file (type bmp)
+<./images//61-3.png>
+File: ./images//61-4.png Graphic file (type bmp)
+<./images//61-4.png>
+File: ./images//71-1.png Graphic file (type bmp)
+<./images//71-1.png>
+File: ./images//71-2.png Graphic file (type bmp)
+<./images//71-2.png>
+File: ./images//71-3.png Graphic file (type bmp)
+<./images//71-3.png>
+File: ./images//71-4.png Graphic file (type bmp)
+<./images//71-4.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1228,17 +1298,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 331.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 331.
+[9]
+File: ./images//81-1.png Graphic file (type bmp)
+<./images//81-1.png>
+File: ./images//81-2.png Graphic file (type bmp)
+<./images//81-2.png>
+File: ./images//81-3.png Graphic file (type bmp)
+<./images//81-3.png>
+File: ./images//81-4.png Graphic file (type bmp)
+<./images//81-4.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1247,22 +1315,119 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10
+[10]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 461.
+
+File: ./images//温度线性拟合.png Graphic file (type bmp)
+<./images//温度线性拟合.png>
+File: ./images//大量数据1.png Graphic file (type bmp)
+<./images//大量数据1.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11
+
+]
+File: ./images//功率拟合.png Graphic file (type bmp)
+<./images//功率拟合.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 510.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 510.
+
+
+Overfull \hbox (7.75053pt too wide) in paragraph at lines 515--522
+ [][] 
+ []
+
+File: ./images//d-2.png Graphic file (type bmp)
+<./images//d-2.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 602.
+
+File: ./images//原始数据.jpg Graphic file (type bmp)
+<./images//原始数据.jpg>
+File: ./images//桌面.jpg Graphic file (type bmp)
+<./images//桌面.jpg>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16
 
 ] (./GP0.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `GP0.out' has not changed.
-(rerunfilecheck)             Checksum: E394C4F190607DBF41204266AF5F9AED;2341.
+(rerunfilecheck)             Checksum: 35F0AF47B13D22BB63EAA366C6403835;3394.
  ) 
 Here is how much of TeX's memory you used:
- 38011 strings out of 476683
- 821739 string characters out of 5807575
- 1882012 words of memory out of 5000000
- 57641 multiletter control sequences out of 15000+600000
- 519201 words of font info for 86 fonts, out of 8000000 for 9000
+ 38583 strings out of 476683
+ 835278 string characters out of 5807575
+ 1885012 words of memory out of 5000000
+ 58192 multiletter control sequences out of 15000+600000
+ 519217 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,427b,966s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on GP0.pdf (10 pages).
+Output written on GP0.pdf (16 pages).

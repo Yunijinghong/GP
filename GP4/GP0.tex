@@ -59,12 +59,7 @@
 		\end{enumerate}
 		\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。\textcolor{red}{（80分）}}
 		\item 每次完成实验后的一周内交\textbf{实验报告}（特殊情况不能超过两周）。
-		\item \textbf{其它注意事项}：
-		\begin{enumerate}
-			\item 请认真查看并理解实验讲义第一章内容；
-			\item 注意实验器材的合理使用；
-			\item 使用结束使用各种仪器之后需要将其放回原位。
-		\end{enumerate}
+	
 	\end{enumerate}
 	
 	% 安全
@@ -171,9 +166,8 @@
 	\end{question}
 	由斯特藩-玻尔兹曼定律可知：$R_T = \sigma T^4$，即辐射体的加热功率与辐射体温度的四次方成正比。这意味着随着温度的升高，辐射体释放的热量迅速增加。\\
 
-辐射体的加热功率与辐射传感器的信号值之间的关系取决于辐射体的温度、表面发射率和波长。一般来说，辐射传感器的输出电压正比于辐射强度，而辐射强度又与辐射体的温度和表面的发射率有关。不同表面的发射率不同，吸收性能好的物体辐射性能也更好。\\
-
-此外，辐射体的光谱辐射功率密度与波长的五次方成反比。这意味着辐射体在不同波长的辐射能量分布不同，随着温度升高，峰值波长向短波方向移动。这些特性都符合热辐射的基本科学原理，对于理解和应用辐射传感器具有重要意义。\\
+	对于辐射传感器，其工作原理是通过测量接收到的辐射功率来获取目标物体的温度。辐射传感器输出的信号值与接收到的辐射功率成正比，即：信号值正比于加热功率正比于$T^{4}$。
+	
 	
 	% ---
 	
@@ -190,72 +184,256 @@
 			\hline
 			专业： & 物理学 & 年级： & 2022级 \\
 			\hline
-			姓名： &  & 学号： & \\
+			姓名： & 黄罗琳 & 学号： & 22344001\\
 			\hline
-			室温： &  & 实验地点： & A522 \\
+			室温： & 25℃ & 实验地点： & A515 \\
 			\hline
-			学生签名：& 见\textbf{附件}部分 & 评分： &\\
+			学生签名：&\includegraphics[width=1cm]{签字.jpg}  & 评分： &\\
 			\hline
-			实验时间：& 2024// & 教师签名：&\\
+			实验时间：& 2024/3/28 & 教师签名：&\\
 			\hline
 		\end{tabularx}
 	\end{table}
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	\section{CC1 热辐射的测量 \quad\heiti 实验记录}
 	% ---
 	
 	% 实验过程记录
 	\subsection{实验内容、步骤与结果}
 	
 	%
-	\subsubsection{操作步骤记录}
+	\subsubsection{实验系统搭建}
 	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-	
-	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item \begin{table}[h]
+		\item 辐射体的安装。辐射体固定于辐射架的最上端，轻旋旁边
+		的固定螺丝，即可从上方取下辐射体.\textbf{实验中所有分实验均选取黑面样品进行测量。}
+		\item 连接控制系统与数据采集系统。
+		\item 检查好所有连线已经正确连接、两台数字万用表、程控电源与电脑通信都正常后，打开“CC1热辐射实验控温程序”。
+		\item \textbf{本实验报告中所有数据分析及思考题回答见数据分析部分}
+		\begin{figure}[{H}]
 			\centering
-			\caption{表格示例}
-			\label{tab:tab1}
-			\begin{tabular}{|c|c|c|c|c|c|}
-				\hline
-				组1/序号i & 1 & 2 & 3 & 4 & 5 \\
-				$v_{1i}(m/s)$ & 1.26 & 1.08 & 1.00 & 0.75 & 0.38 \\
-				$f_{1i}(Hz)$ & 40073 & 40127 & 40105 & 40088 & 40066 \\
-				\hline
-				组2/序号i & 1 & 2 & 3 & 4 & 5 \\
-				$v_{2i}(m/s)$ & 1.21 & 1.06 & 0.99 & 0.52 & 0.57 \\
-				$f_{2i}(Hz)$ & 40143 & 40125 & 40084 & 40080 & 40067 \\
-				\hline
-				组3/序号i & 1 & 2 & 3 & 4 & 5 \\
-				$v_{3i}(m/s)$ & 1.15 & 0.98 & 0.78 & 0.59 & 0.36 \\
-				$f_{3i}(Hz)$ & 40135 & 40115 & 40092 & 40070 & 40044 \\
-				\hline
-			\end{tabular}
-		\end{table}		
+			\includegraphics[width=0.4\linewidth]{接线.png}
+			\caption{实验仪器接线示意图}
+			\label{}
+		\end{figure}
+		\begin{figure}[{H}]
+			\centering
+			\includegraphics[width=0.3\linewidth]{仪器判断.png}
+			\caption{判断是否连接成功（使用软件Ultra
+			Sigma）}
+			\label{}
+		\end{figure}
+		\begin{figure}[{H}]
+			\centering
+			\includegraphics[width=0.3\linewidth]{程序.png}
+			\caption{控温程序示例}
+			\label{}
+		\end{figure}
 	\end{enumerate}
-	
-	% ---
-	
-	% 原始数据
-	\clearpage
-	\subsection{原始数据记录}
-	实验记录本上的原始数据见%\cref{}（签字）。
-	
-	实验台桌面整理见%\textbf{附件}部分(\cref{})。
-	
-	其它原始数据见%\cref{}。
-	% ---
-	
-	% 问题记录
+	 
+	%
+	\subsubsection{测量物体的辐射面温度对辐射强度大小的影响}
+	\begin{enumerate}
+		\item 选择辐射距离为\textbf{150mm}，将辐射传感器调至该距离；
+		\item 设计5个温度控制点；由于120\textdegree C的断电保护控制，建议设计的控温温度设置值不高于118\textdegree C。记录每个控温点（稳定后）所需的电功率以及辐射传感器输出电压；\\
+		  本人学号为001结尾，故选用41\textdegree C开始的五个温度控制点，得到如下数据：
+		  \begin{table}[h]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			设定温度/℃ & 实测温度/℃ & 辐射传感器 & 输出功率（W） \\ \hline
+			41          & 40.9463     & 158         & 0.627         \\ \hline
+			51          & 50.9856     & 276         & 1.243         \\ \hline
+			61          & 60.9884     & 404         & 1.645         \\ \hline
+			71          & 70.9994     & 555         & 2.032         \\ \hline
+			81          & 80.9907     & 709         & 2.543         \\ \hline
+			\end{tabular}
+			\caption{实验数据}
+			\label{tab:temperature_power_data}
+			\end{table}
+		\item 分析数据，探索辐射强度与辐射表面温度之间的关系，并绘制温度-辐射强度曲线图；
+		\item 分析数据，探索电源加热功率与辐射表面温度之间的关系。\textbf{数据处理见后}
+	\end{enumerate}
+
+	\subsubsection{测量在不同辐射距离在d的辐射传感器输出P }
+\begin{enumerate}
+	\item 将控温度控制目标设置温度$T=89.00^\circ$C，依然选择用光面辐射体进行实验。
+
+\item 设计5个位置测量点。
+
+\item 移动红外传感器的位置，每移动一定的距离后，记录测得对应辐射强度,绘制$P-d^{-2}$图。\\
+\textbf{ 本人学号为001结尾，故选用151mm开始的6个位置测量点，得到如下数据}
+\begin{table}[htbp]
+	\centering
+	\caption{不同辐射距离在d的辐射传感器输出P}
+	  \begin{tabular}{|c|cccccc|}
+		\hline
+	  目标距离 $d$ (mm) & 151 & 171 & 191 & 211 & 231&251 \\
+	  \hline
+	  输出电压 $P$ ($\mu V$ ) & 407 & 282 & 224& 174 & 147&119 \\
+	  \hline
+	  \end{tabular}%
+	\label{tab:data_horizontal}%
+  \end{table}%
+\end{enumerate}
+\subsubsection{测量不同物体表面的发射系数}
+将热辐射传感器移开，更换所需辐射面的辐射体。分别正确连接辐射器PT1000和陶瓷加热器的连线到万用表和可编程直流电源上，控温表设置在61℃，待温度控制好后，将热辐射传感器移至靠近辐射体处，测量并记录该辐射传感器读数（实验时，保证热辐射传感器与待测辐射面距离相同(150mm)，便于分析和比较）
+\begin{table}[H]
+	\centering
+	\caption{不同表面条件下的辐射传感器输出电压}
+	  \begin{tabular}{|c|c|c|c|}
+		\hline
+	  表面条件 & 黑面 & 粗糙面 & 光面 \\
+	  \hline
+	  辐射传感器输出电压 $P$ ($\mu V$) & 408 & 157 & 140 \\
+	  \hline
+	  \end{tabular}%
+	\label{tab:data_horizontal}%
+  \end{table}%
+  \subsubsection{实验数据图像}
+  此图像均为实验过程中个温度控制点（41\textdegree C开始的五个温度控制点）的温控程序简化图像
+  \begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{41-1}
+        \caption{辐射器温度}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{41-2}
+        \caption{传感器示数}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{41-3}
+        \caption{电压}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{41-4}
+        \caption{电流}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{51-1}
+        \caption{辐射器温度}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{51-2}
+        \caption{传感器示数}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{51-3}
+        \caption{电压}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{51-4}
+        \caption{电流}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{61-1}
+        \caption{辐射器温度}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{61-2}
+        \caption{传感器示数}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{61-3}
+        \caption{电压}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{61-4}
+        \caption{电流}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{71-1}
+        \caption{辐射器温度}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{71-2}
+        \caption{传感器示数}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{71-3}
+        \caption{电压}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{71-4}
+        \caption{电流}
+    \end{minipage}
+\end{figure}
+
+% Repeat similar code blocks for 81 and 91 with appropriate filenames
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{81-1}
+        \caption{辐射器温度}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{81-2}
+        \caption{传感器示数}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{81-3}
+        \caption{电压}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.23\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{81-4}
+        \caption{电流}
+    \end{minipage}
+\end{figure}
+
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
-		\item 
+		\item 首先在接线过程中我出现了接线错误导致的仪器无法正确识别，电脑上温度控制软件无法识别出我所连接的仪器，通过改正接线后，成功正确连接。
+		\item 实验中我是通过测量电阻的方式来检查实验仪器的接线，因为实验仪器是无法通过接线口的颜色来判断的，所以需要对内阻进行测量，才能判断是否连接正确。
+		\item 实验仪器的各个辐射体有共地的情况，所以在测量之前需要对辐射体是否“共地”进行判断，同样是通过测内阻的方式，例如需要将测量内阻为$0\Omega$ 和$40\Omega$的两组接头分类开来，我的实验仪器上便是黑与黑一组，红与红一组。
+		\item 实验中存在我需要调整高度，但是转轴一旦转动会存在无法自行停止的情况，需要用手扶着，我是在同学的帮助下完成了不同高度的实验数据记录。
 	\end{enumerate}
 	% ---
 	
@@ -271,35 +449,97 @@
 			\hline
 			专业：& 物理学 &年级：& 2022级\\
 			\hline
-			姓名： &  & 学号：& \\
+			姓名： & 黄罗琳 & 学号：& 22344001\\
 			\hline
-			日期：&  & 评分： &\\
+			日期：& 2024/3/28 & 评分： &\\
 			\hline
 		\end{tabularx}
 	\end{table}
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	\section{CC1 热辐射的测量 \quad\heiti 分析与讨论}
 	% ---
 	
 	% 数据处理
 	\subsection{实验数据分析}
 	
 	%
-	\subsubsection{}
+	\subsubsection{测量物体的辐射面温度对辐射强度大小的影响}
 	\begin{enumerate}
-		\item 
+		\item 实验选取黑面样品进行测量，设定距离为150mm，处理实验数据如下，并绘制拟合曲线如图24所示，拟合曲线横轴为开氏温度的四次方，纵轴为辐射传感器示数。
+		\begin{table}[H]
+			\centering
+			\caption{辐射传感器示数相对于表面温度（开氏度）数据}
+			\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+				\textbf{设定温度/℃} & 41 & 51 & 61 & 71 & 81  \\ \hline
+				\textbf{实测温度/℃} & 40.9463 & 50.9856 & 60.9884 & 70.9994 & 80.9907  \\ \hline
+				\textbf{开氏度/K} & 313.9463 & 323.9856 & 333.9884 & 343.9994 & 353.9907   \\ \hline
+				\textbf{辐射传感器} & 158 & 276 & 404 & 555 & 709  \\ \hline
+				电源输出功率 (W) & 0.627 & 1.243 & 1.645 & 2.032 & 2.543 \\\hline
+			\end{tabular}
+		\end{table}
+		\begin{figure}[{H}]
+			\centering
+			\includegraphics[width=0.6\linewidth]{温度线性拟合.png}
+			\caption{辐射传感器示数相对于表面温度$T^4$拟合曲线}
+		\end{figure}
+	\indent 根据软件导出数据后，得到如下所示的各个数据表，通过分析可知，当温度稳定后，由于仪器精度问题，辐射传感器示数基本处于不变状态，所以只需采用一组代表性数据即可完成所有数据的拟合，故图24的拟合曲线符合实验数据要求和实验原理。
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{大量数据1.png}
+	\caption{软件数据导出示例}
+	\label{}
+\end{figure}
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.6\linewidth]{功率拟合.png}
+	\caption{电源加热功率与辐射体表面温度}
+	\label{}
+\end{figure}
+\item 数据分析\\
+    由图24可得，可见辐射强度与辐射体表面开氏温度的四次方成正比，即斯特藩-玻尔兹曼定律成立。\\
+	根据拟合曲线的截距不为零说明拟合曲线并不过原点，这可能是由于实验过程中实验仪器可能会对热辐射产生影响，并且实验过程中空气可能会对实验数据产生影响，从而引入误差，并且由于横坐标的数值很大，可能会出现“失之毫厘谬以千里”的问题。\\
+	尽管出现此种误差，但是根据$R^{2}=0.9985$可以判断，辐射传感器示数与表面温度的$T^4$成正比，斯特藩-玻尔兹曼定律成立。\\
+    由图26可得，电源加热功率与辐射体表面温度成正比,$R^{2}=0.98618$,实验数据存在一定的误差，但是在误差允许范围之内，也符合实验预期，故可认定实验成功。
+
 	\end{enumerate}
 	
 	%
-	\subsubsection{}
+	\subsubsection{测量在不同辐射距离在 d 的辐射传感器输出P，拟合给出$P-d$之间的关系}
 	\begin{enumerate}
-		\item 
-	\end{enumerate}
+		\item 实验选取黑面样品进行测量，温度设定61℃进行实验，根据所得数据进行拟合。
+		\begin{table}[!ht]
+			\centering
+			\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+				目标距离 d (mm) & 151 & 171 & 191 & 211 & 231 & 251  \\ \hline
+				输出电压 P (µV )  & 407 & 282 & 224 & 174 & 147 & 119  \\ \hline
+				$d^{-2}$& 4.38577E-05 & 3.41986E-05 & 2.74115E-05 & 2.24613E-05 & 1.87403E-05 & 1.58728E-05  \\ \hline
+				
+			\end{tabular}
+		\end{table}
 	
-	%
-	\subsubsection{}
+	
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.6\linewidth]{d-2.png}
+		\caption{$P-d^{-2}$拟合曲线}
+		\label{}
+	\end{figure}
+	\item 数据分析\\
+	$P-d^{-2}$曲线的$R^{2}=0.991$拟合效果很好，说明\textbf{具有类似光强和距离的平方成反比的规律}\\
+	对比距离平方反比律与（平面辐射源的）辐射角关系式$$\dot{q}=\frac{\dot{q}_a}{2\pi}\int_0^{2\pi}d\omega\int_0^\alpha sin\theta cos\theta d\theta=\frac{\dot{q}_a}4(1-cos2\alpha)=\frac{\dot{q}_a}2sin^2\alpha $$
+	根据此公式的推导过程，其与辐射面与接收器之间的所存在的张角有关，距离越近，张角显著增大，此时就不满足平方反比定律，\textbf{所以平方反比定律适用于距离较远的情况下，而辐射角关系式适用于较近的距离。}
+	\item 对于思考题：以下距离的定义哪个正确：（1）从辐射表面到传感器表面（红外透镜）的距离；（2）从辐射表面到传感器内部热电堆表面的距离。\\
+	\textbf{我认为第一种更正确，因为进入传感器表面的辐射大部分都会被吸收进仪器，所以此时可以认定进入的辐射即为最终辐射，如果此时再选择到内部为最终距离的话，会导致误差加剧。即对数据的要求是要在同一标准下，确定进入的辐射为最终辐射，那么则进入传感器的位置即为定义距离的位置，所以第一个定义是正确的。}\\
+	他们对于误差的影响取决于传感器和辐射面之间的距离，距离越大，此种误差可以忽略，但是值得注意的是，由于在数据处理过程中存在平方反比的关系，所以会出现实验结果对于误差比较敏感，此时就要根据实验条件进行多组或者更高精度的测量。
+	
+	\end{enumerate}
+	\subsubsection{测量不同物体表面的发射系数}
+	设定温度为 61℃ 、距离为 150mm，分别使用黑面、粗面、光面样品进行实验，根据实验数据（表3）可知:
+	$$\text{发射系数: 黑面>粗糙面>光面。}$$
 	
 	% ---
 	
@@ -308,44 +548,83 @@
 	
 	%思考题1
 	\begin{question}
-		
+		为何当热辐射传感器太靠近辐射表面时，所测出的辐照度偏离距离平方反比规律？
 	\end{question}
+	如上文所说，公式$\dot{q}=\frac{\dot{q}_a}2sin^2\alpha $与辐射面与接收器之间的所存在的张角有关，距离越近，张角显著增大，此时就不满足平方反比定律，\textbf{所以平方反比定律适用于距离较远的情况下，而辐射角关系式适用于较近的距离。}\\
+	\indent 此外，辐射源表面可能存在非均匀性，例如局部温度变化或表面不平整，这会导致在距离辐射源较近的位置测量到的辐射强度与距离的平方反比关系不符。
 	
 	% 思考题2
 	\begin{question}
-		
+	SMTIR9902与SMTIR9902SIL各有什么特点？各适合于什么场景的非接触温度测量？为什么？
 	\end{question}
-	
+	SMTIR9902和SMTIR9902SIL是两款红外非接触式温度传感器，前者适用于一般环境中的温度测量,为过滤环境辐射的影响，增加了滤镜，以过滤可见光的影响，具有较高的精度和稳定性；而后者采用了SIL封装,则适用于高温高压环境，具有更好的耐热性和耐压性，能够稳定工作在恶劣的环境中。
 	% 思考题3
 	\begin{question}
-		
+	辐射传感器输出信号与辐射表面绝对温度4次方成线性关系，为何直线不过原点？斯特藩-玻尔兹曼定律是否成立？为什么？
 	\end{question}
-	
+	正如数据分析时所写，此结果可能是由于误差引入导致的，这个误差可能是传感器本身的固有噪声、环境因素或者测量系统的校准误差等原因引起的，所以直线不过原点。\\
+	此时斯特藩-玻尔兹曼定律仍然成立，这是由于尽管不过原点，但是直线拟合得非常好，$R^{2}=0.9985$，辐射传感器示数与表面温度的$T^4$成正比，斯特藩-玻尔兹曼定律成立。
 	% ---
-	
+	要评估材料的防热辐射能力，需要考虑以下几个因素：
+	\begin{question}
+		如何评价材料（如透光隔热膜） 的防热辐射能力及其在窗户
+应用中的节能效果？
+		\end{question}
+\begin{enumerate}
+  \item \textbf{反射率}：材料的反射率指的是它对热辐射的反射能力。高反射率的材料能够将大部分的热辐射反射回去，减少吸收和热量传导。
+
+  \item \textbf{吸收率}：吸收率表示材料吸收热辐射的能力。低吸收率的材料会较少吸收热量，因此能够保持较低的温度。
+
+  \item \textbf{发射率}：发射率是指材料自身发出的热辐射相对于黑体的能力。低发射率的材料会减少热量的辐射，从而减少其自身的热量损失。
+
+  \item \textbf{热传导}：热传导性指材料导热的能力。低热传导性的材料不容易传导热量，因此能够提高防热辐射能力。
+  \item 窗户应用方面的节能效果：在窗户应用中，透光隔热膜可以有效减少太阳辐射和室内热量的进入，降低室内温度，提高舒适度。通过减少空调的使用，可以节省能源并降低能源消耗，从而达到节能的目的。同时，透光隔热膜还可以减少室内家具和地板等的日晒损坏，延长室内装饰的使用寿命。因此，透光隔热膜在窗户应用中具有显著的节能效果和环境保护作用。
+
+
+\end{enumerate}
+\begin{question}
+	如何在（变化的）大气环境温度下测量各热辐射源的温度？
+	\end{question}
+	\begin{enumerate}
+		\item \textbf{使用热像仪：} 热像仪可以直接测量热辐射源的红外辐射，而不受大气环境温度变化的影响。
+	  
+		\item \textbf{温度补偿方法：} 使用其他传感器来测量大气环境温度，并将其纳入到计算中，以便修正测量结果。
+	  
+		\item \textbf{控制环境条件：} 尽可能在室内进行测量，并考虑使用隔热罩或屏蔽物来减少外部环境的影响。
+	  
+		\item \textbf{多次测量和平均处理：} 进行多次测量，并对结果进行平均处理，可以减少测量误差，并提高测量结果的准确性。
+	  \end{enumerate}
 	
 	% 结语部分
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{CC1 热辐射的测量\quad\heiti 结语}
 	% ---
 	
 	% 总结、杂谈与致谢
-	\subsection{实验心得和体会、意见建议等}
+	\subsection{实验心得和体会}
 	\begin{enumerate}
-		\item 
+		\item 实验总体难度不大，只要理解了实验原理就可以很快速的完成实验
+		\item 实验重点在于要正确接线，有些情况实验仪器可能与示意图不相符，此时需要自行进行分析，得出正确的实验接线。
+		\item 实验过程需要细心，提前做好预习，例如我在完成预习之后就决定在61℃完成后续实验，完成后再进行升温，这样就剩去了等待仪器降温的时间。
 	\end{enumerate}
 	% ---
 	
 
 	% 附件
 	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
 	
-	实验报告个人签名如
-
-	% ---
-	
-	
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.3\linewidth]{原始数据.jpg}
+		\caption{实验原始数据及签字}
+		\label{}
+	\end{figure}
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.4\linewidth]{桌面.jpg}
+		\caption{实验桌面整理}
+		\label{}
+	\end{figure}
 \end{document}
