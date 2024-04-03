@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  3 APR 2024 02:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.16)  4 APR 2024 02:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1182,11 +1182,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 87.
+(hyperref)                replaced by space on input line 88.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 87.
+(hyperref)                removing `\heiti' on input line 88.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1198,7 +1198,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 150--156
+Underfull \hbox (badness 10000) in paragraph at lines 151--157
 
  []
 
@@ -1210,7 +1210,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
@@ -1228,11 +1228,11 @@ File: ./images//签字.jpg Graphic file (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 200.
+(hyperref)                replaced by space on input line 201.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 200.
+(hyperref)                removing `\heiti' on input line 201.
 
 File: ./images//接线.png Graphic file (type bmp)
 <./images//接线.png>
@@ -1319,11 +1319,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 461.
+(hyperref)                replaced by space on input line 462.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 461.
+(hyperref)                removing `\heiti' on input line 462.
 
 File: ./images//温度线性拟合.png Graphic file (type bmp)
 <./images//温度线性拟合.png>
@@ -1350,16 +1350,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 510.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 510.
-
-
-Overfull \hbox (7.75053pt too wide) in paragraph at lines 515--522
+Overfull \hbox (7.75053pt too wide) in paragraph at lines 516--523
  [][] 
  []
 
@@ -1392,11 +1383,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 602.
+(hyperref)                replaced by space on input line 603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 602.
+(hyperref)                removing `\heiti' on input line 603.
 
 File: ./images//原始数据.jpg Graphic file (type bmp)
 <./images//原始数据.jpg>
@@ -1419,12 +1410,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `GP0.out' has not changed.
-(rerunfilecheck)             Checksum: 35F0AF47B13D22BB63EAA366C6403835;3394.
+(rerunfilecheck)             Checksum: 5F71FE7D29D3519A5D5C76FE066750F2;3299.
  ) 
 Here is how much of TeX's memory you used:
  38583 strings out of 476683
  835278 string characters out of 5807575
- 1885012 words of memory out of 5000000
+ 1883012 words of memory out of 5000000
  58192 multiletter control sequences out of 15000+600000
  519217 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
