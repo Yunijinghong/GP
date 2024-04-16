@@ -3,6 +3,8 @@
 \input{Settings} 
 \usepackage{lipsum}
 \usepackage{adjustbox}
+\usepackage{ctex} % 中文支持
+\usepackage{booktabs}
 %\usepackage{mathrsfs} % 字体
 %\captionsetup[figure]{name=Figure} % 图片形式
 %\captionsetup[table]{name=Table} % 表格形式
@@ -252,13 +254,28 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 	\end{enumerate}	
 	\item 实验数据与现象（编号与实验步骤中一致）
 	 \begin{enumerate}
-		\item 所用透镜焦距$f =  mm$
-		\item 观察屏幕上的光线强度，光强不变，说明白光发出的自然光为随机偏振光。
-		\item 设置$p_1=0°$ $p_2=   °$ 时消光\\
-		设置$p_2=0°$ $p_1=   °$ 时消光
+		\item 所用透镜焦距$f =150 mm$
+		\item 观察屏幕上的光线强度，光强不变，说明白光发出的自然光为\textbf{随机偏振光。}
+		\item \textbf{设置$p_1=0°$ \quad $p_2=  172 °/352°$ 时消光\\
+		设置$p_2=0°$ \quad$p_1=  348°/168 °$ 时消光}
 		\item 在消光的位置，将P1轴旋转20°，证明P2轴旋转20°，消光现象再次出现。
-		\item P3 位置为  时消光，故 P3的透振方向为 。将 P3 旋转 45°，观察到光斑亮度减弱。
-		\item 拿走偏振片 P3，在 P1 和 P2 之间插入塑料板，发现。转动其中任意一个元件，
+		\item P3 位置为158°时消光，故 P3的透振方向为 。将 P3 旋转 45°，观察到光斑亮度减弱。
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}[b]{0.4\linewidth}
+				\centering
+				\includegraphics[width=\linewidth]{平行光.jpg}
+				\caption{未消光实验图像}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[b]{0.4\linewidth}
+				\centering
+				\includegraphics[width=\linewidth]{消光.jpg}
+				\caption{消光实验图像}
+			\end{minipage}
+		\end{figure}
+		
+		
 	\end{enumerate}
 	
 \end{enumerate}	
@@ -274,7 +291,64 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 		\item 放置红色滤光片在可变光阑前，重复实验。
 		\item 放置绿色滤光片在可变光阑前，重复实验。
 	\end{enumerate}	
+
 	\item 实验数据与拟合图像
+	
+	\begin{table}[H]
+		\centering
+		\caption{角度 ($\theta$) vs. 强度 (μA)}
+		\label{tab:angle_intensity}
+		\resizebox{0.27\textwidth}{!}{%
+		\begin{tabular}{|c|ccc|}
+		\hline
+		角度 ($\theta$/°) & 白光 ($\mu$A) & 红光 ($\mu$A) & 绿光 ($\mu$A) \\ \hline
+		0   & 46.99 & 0.424 & 2.55 \\
+		10  & 46.48 & 0.397 & 2.41 \\
+		20  & 44.55 & 0.357 & 2.16 \\
+		30  & 42.64 & 0.32  & 1.8  \\
+		40  & 40.65 & 0.257 & 1.35 \\
+		50  & 38.85 & 0.218 & 0.91 \\
+		60  & 36.82 & 0.162 & 0.48 \\
+		70  & 35.58 & 0.124 & 0.14 \\
+		80  & 34.63 & 0.103 & 0.02 \\
+		90  & 34.45 & 0.098 & 0.01 \\
+		100 & 35.04 & 0.104 & 0.02 \\
+		110 & 36.44 & 0.127 & 0.14 \\
+		120 & 38.34 & 0.183 & 0.52 \\
+		130 & 40.35 & 0.22  & 0.93 \\
+		140 & 42.74 & 0.256 & 1.37 \\
+		150 & 44.71 & 0.321 & 1.83 \\
+		160 & 46.2  & 0.356 & 2.16 \\
+		170 & 46.92 & 0.392 & 2.48 \\
+		180 & 47.12 & 0.421 & 2.52 \\ \hline
+		\end{tabular}%
+		}
+	\end{table}
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{白光拟合.png}
+		  \caption{白光光强拟合图像}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{红光拟合.png}
+		  \caption{红光光强拟合图像}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{绿光拟合.png}
+		  \caption{绿光光强拟合图像}
+		\end{minipage}
+	\end{figure}
+	对应图像的拟合公式，符合理论公式，如下：\\
+	$I=12.48cos^2\theta+34.45\quad R^2=0.97809$\\
+	$I=0.31cos^2\theta+0.09\quad R^2=0.99197$\\
+	$I=2.60cos^2\theta-0.11\quad R^2=0.99693$\\
+		
+		
 
 
 	\end{enumerate}
