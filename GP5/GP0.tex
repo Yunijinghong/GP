@@ -5,6 +5,7 @@
 \usepackage{adjustbox}
 \usepackage{ctex} % 中文支持
 \usepackage{booktabs}
+\usepackage{subcaption}
 %\usepackage{mathrsfs} % 字体
 %\captionsetup[figure]{name=Figure} % 图片形式
 %\captionsetup[table]{name=Table} % 表格形式
@@ -242,15 +243,15 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 	\item 实验步骤：
 	\begin{enumerate}
 		\item 用自准直等快速方法产生准直光束。
-		\item 放置第一个偏振片（P1）并改变透振方向。观察屏幕上的光线强度。总结白光发出的自然光的性质。
+		\item 放置第一个偏振片（$P_1$）并改变透振方向。观察屏幕上的光线强度。总结白光发出的自然光的性质。
     
-    \item 放置第二个偏振片（P2）。旋转P2，改变透振方向，观察屏幕上光强的变化。发现光两次出现消失的现象，确定消光的位置。这时两个偏振片透振方向相垂直。同样的，旋转偏振片P1，能得到同样的结果。
+    \item 放置第二个偏振片（$P_2$）。旋转$P_2$，改变透振方向，观察屏幕上光强的变化。发现光两次出现消失的现象，确定消光的位置。这时两个偏振片透振方向相垂直。同样的，旋转偏振片$P_1$，能得到同样的结果。
     
-    \item 在消光的位置，将P1轴旋转20°，证明P2轴旋转同样的角度时，消光现象再次出现。
+    \item 在消光的位置，将$P_1$轴旋转20°，证明$P_2$轴旋转同样的角度时，消光现象再次出现。
     
-    \item 在偏振片P1和P2之间放置第3个偏振片P3。先确定P3的透振方向，再转45°的角度，观察并说明现象。
+    \item 在偏振片$P_1$和$P_2$之间放置第3个偏振片P3。先确定P3的透振方向，再转45°的角度，观察并说明现象。
     
-    \item 拿走偏振片P3，在P1和P2之间插入塑料板或三角尺等透明物体，观察现象；转动其中任何一个元件，观察现象；给塑料板加力，观察并说明这三个现象的变化。
+    \item 拿走偏振片P3，在$P_1$和$P_2$之间插入塑料板或三角尺等透明物体，观察现象；转动其中任何一个元件，观察现象；给塑料板加力，观察并说明这三个现象的变化。
 	\end{enumerate}	
 	\item 实验数据与现象（编号与实验步骤中一致）
 	 \begin{enumerate}
@@ -258,8 +259,8 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 		\item 观察屏幕上的光线强度，光强不变，说明白光发出的自然光为\textbf{随机偏振光。}
 		\item \textbf{设置$p_1=0°$ \quad $p_2=  172 °/352°$ 时消光\\
 		设置$p_2=0°$ \quad$p_1=  348°/168 °$ 时消光}
-		\item 在消光的位置，将P1轴旋转20°，证明P2轴旋转20°，消光现象再次出现。
-		\item P3 位置为158°时消光，故 P3的透振方向为 。将 P3 旋转 45°，观察到光斑亮度减弱。
+		\item 在消光的位置，将$P_1$轴旋转20°，证明$P_2$轴旋转20°，消光现象再次出现。
+		\item P3 位置为158°时消光，故 P3的透振方向为68° 。将 P3 旋转 45°，观察到光斑亮度减弱。
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}[b]{0.4\linewidth}
@@ -356,11 +357,22 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 	%
 	\subsubsection{玻璃反射起偏和布儒斯特角的测量}
 	\begin{enumerate}
+		\item 实验步骤
+	\begin{enumerate}
 		\item 观察教室的天花板的日光灯管，旋转偏振片， 光强不变，说明日光灯是随机偏振光。
 		\item 观察日光灯在地面瓷砖上的反射像，旋转偏振片，发现反射像的亮度发生变化，说明反射产生了部分偏
 		振光。
 		\item 改变观察者的位置，也就是改变天花板上日光灯管的入射角度，使光通过偏振片的某方向光强为零时，计算出日光灯管的入射角。 验证玻璃的折射率n= 1.5时， 布儒斯特角值大约为56°。
 	\end{enumerate}
+\item 实验数据
+   \begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{示意图.png}
+	\caption{实验测量示意图}
+	\label{}
+   \end{figure}
+   \textbf{如图所示，$\arctan\theta=33.416°$ \quad $\phi=90°-\theta=57.584°$}
+\end{enumerate}
 	\subsubsection{光的散射}
 	\begin{figure}[{H}]
 		\centering
@@ -377,7 +389,31 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 			\item 用偏振片观察在(Ox)横向方向的散射光。通过水中倒入的少许粉末的作用，可观察到，在光
 			传播垂直方向上，光（部分地） 在垂直方向(Oy)是线性偏振光。
 		\end{enumerate}
+		\item 实验现象
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}[b]{0.45\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{牛奶角度1.jpg}
+				\caption{偏振片角度1}
+				\label{fig:minipage1}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[b]{0.45\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{牛奶角度2.jpg}
+				\caption{偏振片角度2}
+				\label{fig:minipage2}
+			\end{minipage}
+			\caption{不同偏振片角度光强变化}
+			\label{fig:combined_minipage}
+		\end{figure}
+		
 	\end{enumerate}
+	 
+	\indent 当光通过偏振片时，只有与偏振片的方向相匹配的光才能透过，其他方向的光则会被吸收或散射。\\
+		\indent 通过旋转偏振片会导致观察到的光强发生变化。这种变化表明此散射光具有偏振性质，因为只有在偏振片的某些方向上才会有较高的光强。
+		\clearpage
 	\subsubsection{分析$\lambda/2$波片特性}
 \begin{enumerate}
 	
@@ -388,10 +424,14 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 	\begin{enumerate}
 		\item  将偏振片$P_1$和$P_2$放置约20厘米的距离，旋转偏振片找到消光位置。然后将$\lambda/2$波片放在两个
 		偏振片之间：观看屏幕，旋转半波片，直到消光重新出现。证明这时有两个相互垂直方向出现消
-		光现象。 这时， $\lambda/2$波片的o轴或e轴方向与偏振片P1的偏振方向平行， 确定对应的位置。
-		\item 旋转偏振片$P_{1}$ 20度。通过旋转偏振片$P_{2}$, 重新出现消光现象。记录偏振片$P$的位置。证实通过从2半波片的作用，线性偏振光可产生对称o轴或e轴方向的线偏振光。
+		光现象。 这时， $\lambda/2$波片的o轴或e轴方向与偏振片$P_1$的偏振方向平行， 确定对应的位置。
+		\item 旋转偏振片$P_{1}$ 20度。通过旋转偏振片$P_{2}$, 重新出现消光现象。记录偏振片$P$的位置。证实通过从半波片的作用，线性偏振光可产生对称o轴或e轴方向的线偏振光。
 	\end{enumerate}
-
+	\item 实验数据
+	\begin{enumerate}
+		\item $P_1$为0°，$P_2$为168°时，完全消光，之后使用$\lambda/2$波片后，无法消光，之后通过旋转波片，在318°、228°、138°、48°的位置上时，出现了消光现象。
+		\item 旋转$P_1$至20°后，旋转$P_2$至149°，即反向旋转20°，重新出现了消光现象。\end{enumerate}\
+      
 
 
 
@@ -399,21 +439,24 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 \subsubsection{分析$\lambda/4$波片特性}
 \begin{enumerate}
 	
-	\item$\text{实验材料:氦氖激光器,短焦镜头,偏光片P1,偏振片P2,四分之一波片}\lambda/4\text{,小屏幕。}$
+	\item$\text{实验材料:氦氖激光器,短焦镜头,偏光片$P_1$,偏振片$P_2$,四分之一波片}\lambda/4\text{,小屏幕。}$
 	\item 实验步骤
 
 
-	\begin{enumerate}
+	 \begin{enumerate}
 		\item  将确定两个偏振片的消光位置。
 		\item 将$\lambda/4$波片放置在两个偏振片之间，观察屏幕。\\
-		旋转$\lambda/4$波片，直到消光重新出现，确定$\lambda/4$波片对应的位置。说明这时有两个相互垂直方向出现消光现象。证明此时$\lambda/4$片的o轴或e轴方向与偏振片P1的偏振方向平行。
-		
-	\end{enumerate}
-
-
-
-
+		旋转$\lambda/4$波片，直到消光重新出现，确定$\lambda/4$波片对应的位置。说明这时有两个相互垂直方向出现消光现象。证明此时$\lambda/4$片的o轴或e轴方向与偏振片$P_1$的偏振方向平行。
+	  \end{enumerate}
+	 \item 实验数据
+      $P_1$为0°，$P_2$为168°时，完全消光，之后使用$\lambda/4$波片后，无法消光，之后通过旋转波片，在64°、154°、244°、334°的位置上时，出现了消光现象。
 \end{enumerate}
+		
+
+
+
+
+
 \subsubsection{分析两个$\lambda/4$波片特性}
 \begin{enumerate}
 	
@@ -429,6 +472,14 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 		\item  旋转其中一个$\lambda/4$波片90度，再旋转偏振片$P_2$重新达到消光，记录偏振片$P_2$的位置。说明此时两个$\lambda/4$波片的关系。
 		
 	\end{enumerate}
+	\item 实验数据
+	\begin{enumerate}
+		\item 当偏振片$P_1$位置为$0^\circ$，$P_2$位置为$168^\circ$时出现消光现象。
+		\item 放置第一个$\lambda/4$波片，旋转波片 当波片位置分别为64°、154°、244°、334°时消光现象出现。
+		\item 再放入第二个$\lambda/4$波片，波片位置为$112^\circ$时出现消光现象。此时两个$\lambda/4$波片的o轴或e轴相平行。
+		\item 旋转$P_1$偏振片$20^\circ$，再将$P_2$沿相同方向也旋转$20^\circ$，重新消光。此时两个$\lambda/4$波片的快慢轴方向一致，相当于一个$\lambda/2$波片。
+		\item 旋转第一个$\lambda/4$波片$90^\circ$，再旋转偏振片$P_2$至$112^\circ$时重新达到消光。此时两个$\lambda/4$波片的关系为一个波片的快轴与另一个波片的慢轴重合，相当于没有波片。
+	\end{enumerate}
 
 
 
@@ -441,14 +492,19 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 	\item 实验步骤
    \begin{enumerate}
 		\item  确定两个偏振片的消光位置
-		\item 放置第一个$\lambda/4$波片，重现消光现象。旋转$P_1$偏振器片45度，标识旋转方向。旋转偏光片$P_2$，观察屏幕上的光强变化，加以说明。
+		\item 放置第一个$\lambda/4$波片，重现消光现象。旋转$P_1$偏振片45度，标识旋转方向。旋转偏光片$P_2$，观察屏幕上的光强变化，加以说明。
 
 		\item  再旋转$P_1$。偏振片的角度10度,旋转$P_2$偏光片,观察屏幕上光强的变化。加以说明。
 		
 		
 	\end{enumerate}
-
-
+\item 实验数据
+\begin{enumerate}
+	\item 偏振片$P_1$位置为$0^\circ$，$P_2$位置为$168^\circ$时出现消光现象。
+	\item 放置第一个$\lambda/4$波片，358°时出现消光现象。
+	\item 逆时针旋转$P_1$偏振片45°，旋转偏光片$P_2$，光强不变。
+	\item 再旋转10°后，旋转偏光片$P_2$，光强出现改变。
+\end{enumerate}
 
 
 \end{enumerate}
@@ -456,20 +512,13 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 
 	% ---
 	
-	% 原始数据
-	\clearpage
-	\subsection{原始数据记录}
-	实验记录本上的原始数据见%\cref{}（签字）。
 	
-	实验台桌面整理见%\textbf{附件}部分(\cref{})。
-	
-	其它原始数据见%\cref{}。
-	% ---
 	
 	% 问题记录
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
-		\item 
+		\item 实验中出现了旋转“半波片”却并没有找到理论所示的两个相互垂直的消光位置，通过重新阅读实验讲义发现，之前旋转的是$p_2$，所以360°旋转中只会出现两个消光位置。
+		\item 实验过程中发现实验仪器存在立柱不匹配的问题，拿到较大口径的底座继续试验。
 	\end{enumerate}
 	% ---
 	
@@ -485,56 +534,151 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 			\hline
 			专业：& 物理学 &年级：& 2022级\\
 			\hline
-			姓名： &  & 学号：& \\
+			姓名： & 黄罗琳 & 学号：&22344001 \\
 			\hline
-			日期：&  & 评分： &\\
+			日期：& 2024/4/11 & 评分： &\\
 			\hline
 		\end{tabularx}
 	\end{table}
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	\section{CB2 偏振光实验 \quad\heiti 分析与讨论}
 	% ---
 	
 	% 数据处理
 	\subsection{实验数据分析}
 	
 	%
-	\subsubsection{}
+	\subsubsection{研究交叉线性偏振片}
 	\begin{enumerate}
-		\item 
+		\item 放置$P_1$后，尽管旋转了偏振片，但是光强不变，说明白光发出的自然光为随机自然光。
+		\item 对于两个偏振片$P_1$$P_2$分别可以找到两个相差180°的位置消光，这说明经过$P_1$后成为线偏振光，然后只有与$P_2$垂直时才会出现完全消光现象，其他方向会有一部分的分量透射，无法消光。
+		\item 对于$P_3$来说，透振方向与消光角度相垂直，所以得出透振方向为68°，旋转45°之后，因为只是一部分分量的光透过$P_3$，所以亮度减弱。
 	\end{enumerate}
+	\subsubsection{验证马吕斯定律}
+	根据实验数据进行理论公式拟合，得到如下实验图像。
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{白光拟合.png}
+		  \caption{白光光强拟合图像}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{红光拟合.png}
+		  \caption{红光光强拟合图像}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=\linewidth]{绿光拟合.png}
+		  \caption{绿光光强拟合图像}
+		\end{minipage}
+	\end{figure}
+	并且得到了符合理论公式的公式，即：\\
+	$I=12.48cos^2\theta+34.45\quad R^2=0.97809$\\
+	$I=0.31cos^2\theta+0.09\quad R^2=0.99197$\\
+	$I=2.60cos^2\theta-0.11\quad R^2=0.99693$\\
+    通过其相关系数可得，数据符合理论公式，故验证了马吕斯定律。
+    \subsubsection{玻璃反射起偏和布儒斯特角的测量}
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.4\linewidth]{示意图.png}
+		\caption{实验测量示意图}
+		\label{}
+	   \end{figure}
+	   \textbf{如图所示，$\arctan\theta=33.416°$ \quad $\phi=90°-\theta=57.584°$}\\
+	   \indent 而$\tan\phi=1.5748$，玻璃的折射率理论值为1.5，相对误差为$4.9\%$
+
+ 
+
+	%
+	\subsubsection{光的散射}
+	通过偏振片的旋转出现了光强的变化，说明在通过牛奶散射之后，出现了偏振光所以，透过偏振片观察，可看到散射光的光强变化。
+	
 	
 	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}
-	
-	%
-	\subsubsection{}
-	
-	% ---
-	
+	\subsubsection{分析$\lambda/2$波片特性}
+	半波片o轴e轴位置确认为：318°、228°、138°、48°
+
+	原理分析：当线偏振光通过$\lambda/2$波片时，虽然光仍然保持线偏振，但其振动方向会旋转一个角度2θ。这意味着入射光的偏振方向相对于波片的o轴或e轴发生了变化。如果入射光的偏振方向与波片的o轴或e轴平行，那么通过波片后光的偏振方向将保持不变，因此有消光现象。
+
+	然而，如果$\lambda/2$波片的o轴或e轴与入射光的偏振方向不平行，那么光的偏振方向将发生改变。在这种情况下，穿过波片的光会有垂直于波片的$P_2$方向的分量，
+
+	而实验中通过旋转20°来证明半波片可产生对称o轴或e轴方向的线偏振光，可以通过下图来证明。如图所示三角相等和两种相反方向（蓝色箭头）的旋转，所以会出现相反方向旋转20°重新出现消光现象。
+	\begin{figure}[{H}]
+		\centering
+		\includegraphics[width=0.4\linewidth]{示意图1.png}
+		\caption{半波片作用示意图}
+		\label{}
+	\end{figure}
+	\subsubsection{分析$\lambda/4$波片特性}
+	在64°、154°、244°、334°的位置上时，有两个互相垂直方向出现了消光现象。
+	理论分析： 偏振光的方向与 o 轴或 e 轴平行时，偏振方向不变。又因为 o 轴和 e 轴重合，在两个相互垂直方向会出现消光现象，所以说明此时证明此时$λ/4$波片的o轴或e轴方向与偏振片$P_1$的偏振方向平行。
+	\subsubsection{分析两个$\lambda/4$波片特性}
+	放入第二个波片后，波片位置为$112^\circ$时出现消光现象。此时两个$\lambda/4$波片的o轴或e轴相平行。若不平行，则光会存在其他方向的分量，不会出现消光现象。
+
+	在实验7.4中，此时两个$\lambda/4$ 波片的快慢轴方向一致，此时相当于一个$\lambda/2$ 波片。
+
+	旋转第一个$\lambda/4$波片$90^\circ$，再旋转偏振片$P_2$至$112^\circ$时重新达到消光。此时两个$\lambda/4$波片的关系为一个波片的快轴与另一个波片的慢轴重合，相当于没有波片。
+	\subsubsection{研究椭圆偏振光和圆偏振光}
+	在进行逆时针旋转$P_1$偏振片45°，旋转偏光片$P_2$，光强不变，这是因为将 $P_1$ 旋转 45°后，通过$\lambda /4$ 波片的线偏振光变成圆偏振光，故旋转$P_2$，光强不变。
+
+	再旋转10°后，旋转偏光片$P_2$，光强出现改变。这是因为此时的线偏振光变成了椭圆偏振光，所以旋转$P_2$时光强会发生改变。
 	% 实验后思考题
 	\subsection{实验后思考题}
 	
 	%思考题1
 	\begin{question}
-		
+		通过实验现象， 证实光的反射规律为：产生部分偏振光，必然产生线性偏振光
 	\end{question}
-	
+	在实验三中，对于观察日光灯在地面瓷砖上的反射像，通过旋转偏振片，发现反射像的亮度发生变化，说明反射产生了部分偏振光。
+
+改变人眼位置，改变日光灯管入射角度，某一角度下发现光强为零，说明产生了线性偏振光。
 	% 思考题2
 	\begin{question}
-		
+		说明用偏振片观察通过水中倒入的少许粉末后的现象产生的原因。
 	\end{question}
-	
+	如实验分析讨论中所讲：通过偏振片的旋转出现了光强的变化，说明在通过牛奶散射之后，出现了偏振光所以，透过偏振片观察，可看到散射光的光强变化。
 	% 思考题3
 	\begin{question}
-		
+		请说明 3D 眼镜和 3D 电影的原理
 	\end{question}
-	
+3D眼镜的原理
+	\begin{enumerate}
+\item 极化式（Passive）
+\begin{itemize}
+  \item 这种类型的3D眼镜使用两个不同方向的偏振滤光片，通常是线性极化滤光片。其中一个眼镜的滤光片允许垂直振动的光线穿过，而另一个眼镜的滤光片允许水平振动的光线穿过。
+  \item 当观众戴上这种眼镜时，左眼只能看到垂直振动的光线，而右眼只能看到水平振动的光线。这样，左右眼分别接收到影片中不同视角的图像，从而在大脑中产生立体感。
+\end{itemize}
+
+\item 活动式（Active）
+\begin{itemize}
+  \item 这种类型的3D眼镜在每个镜片上都有一个液晶屏，可以根据影片内容的要求进行快速的开启和关闭。当左眼的图像显示时，右眼的镜片变暗，反之亦然。
+  \item 通过与特殊的3D电影投影设备配合使用，这种眼镜能够确保每只眼睛只看到对应的图像，从而产生立体感。
+\end{itemize}
+\end{enumerate}
+3D电影的原理
+\begin{enumerate}
+\item 立体影像拍摄
+\begin{itemize}
+  \item 在制作3D电影时，通常使用两个摄像头或者一台具有双目镜头的摄像机同时拍摄同一场景的两个不同视角。这样可以捕捉到左眼和右眼的视角。
+\end{itemize}
+
+\item 立体影像处理
+\begin{itemize}
+  \item 拍摄完成后，两个视角的影像会被合并成一个影片。这个过程可能涉及到校准、颜色校正和对齐等步骤，以确保左右眼的影像能够准确地匹配。
+  \item 在3D电影院中，这个合成的影片会通过特殊的投影设备将左眼和右眼的图像交替地投射到屏幕上。这通常使用极化或者快速切换的技术来实现。
+\end{itemize}
+
+\item 深度感知技术
+\begin{itemize}
+  \item 为了增强观众的立体感知，电影制作人员可能会使用特殊的技术来调整景深和透视效果。这包括在后期制作中增加景深效果、调整相机参数以及使用特殊的3D特效等。
+  \item 这些技术可以使观众在观看时感受到更加真实和引人入胜的立体效果。
+\end{itemize}\end{enumerate}
+
 	% ---
 	
 	
@@ -542,23 +686,49 @@ $\lambda/4$ 波片的厚度 $e$ 确保对于给定波长 $\lambda$ 的平行光�
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{ CB2 偏振光实验 \quad\heiti 结语}
 	% ---
 	
 	% 总结、杂谈与致谢
 	\subsection{实验心得和体会、意见建议等}
 	\begin{enumerate}
-		\item 
+		\item 实验总体难度不大，并且实验原理比较简单，需要将所学的知识更深层次理解，对于上学期所学光学进行了一次复习。
+		\item 实验过程中要求有耐心，实验内容较多，所以要按部就班来依次完成实验。
+		\item \textbf{本实验报告采用LATEX编辑，实验所有要求内容均包含于本实验报告中}
+		
 	\end{enumerate}
+	 \quad \large \textbf{感谢您对于此篇实验报告的阅读与批改，祝您工作顺利！}
 	% ---
 	
 
 	% 附件
 	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
-	
-	实验报告个人签名如
+\begin{figure}[H]
+	\begin{minipage}[b]{0.3\linewidth}
+	  \centering
+	  \includegraphics[width=\linewidth]{预习.jpg}	
 
+	  \caption{预习报告分数}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\linewidth}
+	  \centering
+	  \includegraphics[width=\linewidth]{数据1.jpg}
+	  \caption{原始数据}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\linewidth}
+	  \centering
+	  \includegraphics[width=\linewidth]{数据2.jpg}
+	  \caption{原始数据}
+	\end{minipage}
+\end{figure}
+\begin{figure}[{H}]
+	\centering
+	\includegraphics[width=0.4\linewidth]{桌面.jpg}
+	\caption{桌面整理}
+	\label{}
+\end{figure}
 	% ---
 	
 	

@@ -8,20 +8,24 @@
 \contentsline {subsubsection}{\numberline {2.1.1}研究交叉线性偏振片}{6}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}验证马吕斯定律}{7}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}玻璃反射起偏和布儒斯特角的测量}{8}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}光的散射}{8}{subsubsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.5}分析$\lambda /2$波片特性}{9}{subsubsection.2.1.5}%
-\contentsline {subsubsection}{\numberline {2.1.6}分析$\lambda /4$波片特性}{9}{subsubsection.2.1.6}%
-\contentsline {subsubsection}{\numberline {2.1.7}分析两个$\lambda /4$波片特性}{9}{subsubsection.2.1.7}%
-\contentsline {subsubsection}{\numberline {2.1.8}研究椭圆偏振光和圆偏振光}{10}{subsubsection.2.1.8}%
-\contentsline {subsection}{\numberline {2.2}原始数据记录}{11}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}实验过程遇到问题及解决办法}{11}{subsection.2.3}%
-\contentsline {section}{\numberline {3}ETX 实验名称××× \hskip 1em\relax \heiti 分析与讨论}{12}{section.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}光的散射}{9}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}分析$\lambda /2$波片特性}{10}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}分析$\lambda /4$波片特性}{10}{subsubsection.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.7}分析两个$\lambda /4$波片特性}{10}{subsubsection.2.1.7}%
+\contentsline {subsubsection}{\numberline {2.1.8}研究椭圆偏振光和圆偏振光}{11}{subsubsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.2}实验过程遇到问题及解决办法}{11}{subsection.2.2}%
+\contentsline {section}{\numberline {3}CB2 偏振光实验 \hskip 1em\relax \heiti 分析与讨论}{12}{section.3}%
 \contentsline {subsection}{\numberline {3.1}实验数据分析}{12}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}}{12}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}}{12}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}}{12}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}实验后思考题}{12}{subsection.3.2}%
-\contentsline {section}{\numberline {4}ETX 实验名称××× \hskip 1em\relax \heiti 结语}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}实验心得和体会、意见建议等}{13}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}附件及实验相关的软硬件资料等}{13}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {3.1.1}研究交叉线性偏振片}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}验证马吕斯定律}{12}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}玻璃反射起偏和布儒斯特角的测量}{13}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}光的散射}{13}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}分析$\lambda /2$波片特性}{13}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}分析$\lambda /4$波片特性}{14}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.7}分析两个$\lambda /4$波片特性}{14}{subsubsection.3.1.7}%
+\contentsline {subsubsection}{\numberline {3.1.8}研究椭圆偏振光和圆偏振光}{14}{subsubsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.2}实验后思考题}{14}{subsection.3.2}%
+\contentsline {section}{\numberline {4} CB2 偏振光实验 \hskip 1em\relax \heiti 结语}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验心得和体会、意见建议等}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}附件及实验相关的软硬件资料等}{16}{subsection.4.2}%
 \contentsfinish 
