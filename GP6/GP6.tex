@@ -36,7 +36,7 @@
 			\hline
 			姓名： &   黄罗琳 & 学号： &  22344001 \\
 			\hline
-			实验时间： & 2024/4/17 & 教师签名： & \\
+			实验时间： & 2024/4/18 & 教师签名： & \\
 			\hline
 		\end{tabularx}
 	\end{table}
@@ -237,7 +237,7 @@
 			\hline
 			姓名： &  黄罗琳& 学号： & 22344001\\
 			\hline
-			室温： &26℃  & 实验地点： & A522 \\
+			室温： &26℃  & 实验地点： & A501 \\
 			\hline
 			学生签名：&  \includegraphics[width=1cm]{签字.jpg} & 评分： &\\
 			\hline
@@ -248,7 +248,7 @@
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称×××  \quad\heiti 实验记录}
+	\section{CA3 \quad 原子的发射和吸收光谱观测分析实验 \quad\heiti 实验记录}
 	% ---
 	
 	% 实验过程记录
@@ -397,22 +397,34 @@
 				\item 测量完所有数量玻璃片的透射曲线后，将所有数据放置在同一张图上进行对比。
 				
 			\end{enumerate}
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.8\linewidth]{总.JPG}
+				\caption{不同数量玻璃片的透射率曲线}
+				\label{}
+			\end{figure}
+
 	\end{enumerate}
 	
 	% ---
 	
 	% 原始数据
-	\clearpage
-	\subsection{原始数据记录}
-	实验记录本上的原始数据见%\cref{}（签字）。
-	
+
 
 	% ---
 	
 	% 问题记录
 	\subsection{实验过程遇到问题及解决办法}
 	\begin{enumerate}
-		\item 
+		\item 实验中出现的实验图像存在较大的噪声，例如在不同浓度$KMnO_4$溶液的实验中参考光谱的曲线可以明显看到噪声的存在，并且这也体现在后续的实验图像中，例如图13的左侧和图14的并不平滑的曲线。
+		\begin{figure}[{H}]
+			\centering
+			\includegraphics[width=0.8\linewidth]{背景清水.JPG}
+			\caption{参考光谱曲线}
+			\label{}
+		\end{figure}
+		\item 实验中要时刻要注意测量值不能饱和，否则各个曲线之间基本毫无差异。
+		\item 注意在$KMnO_4$溶液的实验中，要注意实验仪器的标签不能阻挡实验光路，否则实验结果会出现严重偏差。
 	\end{enumerate}
 	% ---
 	
@@ -428,56 +440,277 @@
 			\hline
 			专业：& 物理学 &年级：& 2022级\\
 			\hline
-			姓名： &  & 学号：& \\
+			姓名： & 黄罗琳 & 学号：& 22344001\\
 			\hline
-			日期：&  & 评分： &\\
+			日期：& 2024/4/18 & 评分： &\\
 			\hline
 		\end{tabularx}
 	\end{table}
 	% ---
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 分析与讨论}
+	\section{CA3 \quad 原子的发射和吸收光谱观测分析实验 \quad\heiti 分析与讨论}
 	% ---
 	
 	% 数据处理
 	\subsection{实验数据分析}
-	
-	%
-	\subsubsection{}
+	\subsubsection{实验一 \quad 原子发射光谱的观测}
 	\begin{enumerate}
-		\item 
+		\item \textbf{拍摄钠灯光谱}
+		
+		
+			
+			
+			钠原子光谱的主线系只有$\widetilde{v}=3p \rightarrow 3s$ 的二条谱线（钠双黄线）是在可见区，其余在紫外区。
+			则根据公式：
+			\[
+			\widetilde{v}=R(\frac{1}{n_2^{*2}}-\frac{1}{n_1^{*2}})=\frac{R}{{(n'-{\mu'}_{l'})}^2}-\frac{R}{{(n-\mu_l)}^2}
+			\]
+			
+			初态为$3p$能级，$n=3$，$l=1$，$\mu_l=0.883$；末态为$3s$能级，$n'=3$，$l'=0$，$\mu'_{l'}=1.373$
+			
+			则代入公式，计算得到
+			\[ \frac{1}{\lambda}\approx\frac{1}{589.3nm}
+			\]
+			
+			至于双黄线的具体波长数值，一般是通过实验进行测量，其非常稳定，一般作为仪器的校准和实验模型的校对。
+
+			\begin{table}[H]
+				\centering
+				\caption{实验值与理论值的相对误差}
+				\begin{tabular}{|c|c|c|c|}
+				\hline
+				对比组 & 实验值 (nm) & 理论值 (nm) & 相对误差 (\%) \\
+				\hline
+				1 & 589.28 & 589.0 & 0.475 \\
+				2 & 589.91 & 589.6 & 0.052 \\
+				\hline
+				\end{tabular}
+				\end{table}
+				\begin{figure}[{H}]
+					\centering
+					\includegraphics[width=0.5\linewidth]{钠双黄线.JPG}
+					\caption{钠双黄线}
+					\label{}
+				\end{figure}
+				观察图16可以发现钠双黄线存在约0.3nm的线宽，对于此有两种猜想：
+				\begin{enumerate}
+					\item 多普勒致宽 \quad 多普勒致宽是由于发射光的原子在热运动中产生的。由于某些原子向观测者移动，而另一些原子远离观测者，这会导致频率的蓝移和红移。其结果是光谱线的增宽。多普勒效应与绝对温度的平方根成正比，因此，温度越高，速度分布越广，致宽越显著。
+					\item 压力致宽 \quad 压力致宽主要与原子或分子的相互作用有关。在高压环境中，原子之间的碰撞或相互作用会干扰发光过程，造成谱线的增宽。压力致宽与原子的数密度有关，数密度越高，碰撞几率越大，导致谱线致宽。因此，它与压强成正比。
+					
+
+
+
+					\end{enumerate}
+					这些可能导致了存在一定的实验误差和0.3nm的线宽。
+				
+
+		
+			
+		
+		\item \textbf{拍摄汞灯光谱}
+			
+			
+		\begin{figure}[{H}]
+			\centering
+			\includegraphics[width=0.8\linewidth]{汞灯.JPG}
+			\caption{汞灯谱线}
+			\label{}
+		\end{figure}
+		
+			\begin{table}[H]
+				\centering
+				\begin{tblr}{
+					cells = {c},
+					vline{1-2,5} = {-}{},
+					hline{1-2,7} = {-}{},
+				}
+				谱线颜色 & 实验值/nm & 标准值/nm & 相对误差   \\
+				黄色   & 579.27 & 579.1  & 0.029\% \\
+				黄色   & 577.23 & 577.0  & 0.040\% \\
+				绿色   & 546.35 & 546.1  & 0.046\% \\
+				蓝色   & 436.15 & 435.8  & 0.080\% \\
+				紫色   & 404.99 & 404.7  & 0.072\% 
+				\end{tblr}
+				\caption{理论值与实验值对比}
+				\label{tab:table2}
+			\end{table}
+			实验相对误差均较小，符合实验较为成功。
+			\item \textbf{拍摄手机屏幕光谱}\\
+			手机屏幕通常使用发光二极管（LED）技术来显示图像。不同的LED基于其所使用的半导体材料会发出特定颜色的光。在手机屏幕中，红色的光通常是由含铝的镓砷化合物（如铝镓砷，AlGaAs）或镓磷化合物（如镓磷化铝，AlInGaP）生成的；绿色的光通常来自铟镓磷（InGaN）；而蓝色的光由氮化镓（GaN）生成。这些不同的LED材料和结构决定了它们在光谱中的表现，分别对应红、绿、蓝三种颜色。
+
+			LED的发光原理基于电子的能级跃迁。当电流流过半导体材料时，电子会被激发到更高的能级，随后再返回到较低的能级。在这一过程中，电子会释放出一定能量的光子，产生光。不同的半导体材料拥有不同的能级结构，这意味着它们产生的光子的能量和频率各不相同。正因为如此，在手机屏幕中，红色、绿色和蓝色LED所发出的光会形成一个可见光谱的连续范围，从而展现出丰富的色彩。
+			
+			所以黄色的手机屏幕有红色和绿色的LED进行发出，得出如图所示的光谱。
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.4\linewidth]{黄.JPG}
+				\caption{黄色手机屏幕光谱}
+				\label{}
+			\end{figure}
+			
+	\end{enumerate}
+			\subsubsection{实验二 原子吸收光谱的观测}
+			
+		\begin{enumerate}
+			\item \textbf{验证比尔定律}
+			
+			由于实验数据的原图噪声较大，所以通过Python代码滤波之后并进行寻峰操作，代码见实验报告附录。
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.8\linewidth]{总的.JPG}
+				\caption{未滤波前实验数据图像}
+				\label{}
+			\end{figure}
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.8\linewidth]{KMNO4滤波.png}
+				\caption{不同浓度的$KMnO_4$溶液对吸收率的影响（三个吸收峰）}
+			\end{figure}
+			\begin{table}
+				\centering
+				\begin{tblr}{
+						cells = {c},
+						vline{2} = {-}{},
+						hline{1-2,8} = {-}{},
+					}
+					浓度/(g/L) & 吸收峰1  & 吸收峰2  & 吸收峰3  \\
+					0.1     & 1.43 & 1.73 & 1.66 \\
+					0.08    & 1.22 & 1.45 & 1.36 \\
+					0.06     & 0.83 & 0.96 & 0.89 \\
+					0.04     & 0.63 & 0.73 & 0.66 \\
+					0.02     & 0.47 & 0.47 & 0.42 \\
+					0.01      & 0.21 & 0.22 & 0.21 
+				\end{tblr}
+				\caption{同一吸收峰对应的不同浓度溶液的吸收率}
+			
+			\end{table}
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.6\linewidth]{线性拟合.png}
+				\caption{线性拟合图像}
+				\label{}
+			\end{figure}
+			则以浓度为横轴，吸收率为纵轴，绘制线性拟合图，最终绘制结果如图21所示。
+			比尔定律的数学形式为：
+				\[ A = \alpha c l \]
+				$A$表示吸光度，$\alpha$是摩尔吸光系数，$c$为浓度，$l$是光通过溶液的路径长度，其中前两个为固定系数，所以为线性关系。即只需要验证$A$与$c$的线性关系，即可验证比尔定律。
+				
+				由图21可知，三条相关系数均在0.98以上，所以实验数据存在线性关系，即比尔定律成立。
+				\item \textbf{验证朗伯定律}
+				
+				由于实验数据噪声较大，进行不同程度的滤波（参数越小滤波效果越大）
+				\begin{figure}[{H}]
+					\centering
+					\includegraphics[width=0.7\linewidth]{1阶滤波.png}
+					\caption{滤波效果（参数为1）}
+					\label{}
+				\end{figure}
+				\begin{figure}[{H}]
+					\centering
+					\includegraphics[width=0.7\linewidth]{2阶滤波.png}
+					\caption{滤波效果（参数为2）}
+					\label{}
+				\end{figure}
+				提取实验数据中500nm，550nm，600nm，650nm，700nm波长分析，玻璃片数量做横轴，透射率的自然对数做纵轴，绘制线性拟合图像。
+			\begin{figure}[{H}]
+				\centering
+				\includegraphics[width=0.8\linewidth]{玻璃拟合.png}
+				\caption{线性拟合图像}
+				\label{}
+			\end{figure}
+			朗伯定律的数学公式为：
+
+\[ I = I_0 \cdot e^{-kl} \]
+
+其中，\( I_0 \) 是入射光的强度，\( I \) 是透射光的强度，\( k \) 是吸收系数，\( l \) 是材料的厚度。
+
+对公式进行对数变换，可以得到：
+
+\[ \ln \frac{I}{I_0} = -kl \]
+
+这个公式说明了透射率的自然对数与材料厚度之间的关系。如果这两个变量之间存在线性关系，朗伯定律则成立。
+
+为了验证这一点，可以测量不同厚度材料的透射率 \( T = \frac{I}{I_0} \)，然后计算透射率的自然对数：
+
+\[ \ln T = \ln \frac{I}{I_0} \]
+
+将这个值与材料厚度 \( l \) 进行线性回归。
+
+根据变形后的公式，这种线性关系的斜率是吸收系数 \( k \) 的相反数。而根据图24所绘制的图像R=-1,说明存在很强的负相关关系，即透射率的自然对数与材料厚度之间有强烈的线性关系，从而验证了朗伯定律。
+
+
+
+
+
+
+
+
+
+
 	\end{enumerate}
 	
-	%
-	\subsubsection{}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}
-	
-	%
-	\subsubsection{}
-	
-	% ---
 	
 	% 实验后思考题
 	\subsection{实验后思考题}
 	
 	%思考题1
 	\begin{question}
-		
+		钠灯光谱有哪些特征？能否从光谱图上判别各谱线所属线系？举例说明。想·
 	\end{question}
-	
+	钠灯的光谱具有以下特征：
+
+\begin{enumerate}
+    \item \textbf{双线结构}：钠灯的光谱由两条主要的谱线组成，被称为钠D线，分别位于589.0 nm和589.6 nm。这两条谱线在光谱图上通常很容易辨认。
+
+    \item \textbf{窄线宽}：钠灯的谱线非常窄，说明其光源具有较高的单色性。窄线宽通常意味着谱线较为纯净。
+
+    \item \textbf{强度不均}：钠D线中的两条谱线强度通常不相等，589.0 nm的D2线通常比589.6 nm的D1线稍强。这种强度不均可以从光谱图上观察到。
+\end{enumerate}
+
+钠原子的光谱包含四个主要线系：主线系、锐线系、漫线系和基线系。通过观察谱线的形状和宽度，可以判别各谱线所属的线系。
+
+\begin{itemize}
+    \item \textbf{主线系}：包含最强的谱线，如钠D线。谱线通常呈现尖锐且窄的峰值。
+
+    \item \textbf{锐线系}：强度略低，但形状与主线系相似。一般呈现窄而尖锐的峰值，表明谱线纯净。
+
+    \item \textbf{漫线系}：这些谱线通常较宽且较平滑，说明光谱可能受多种因素影响。
+
+    \item \textbf{基线系}：最弱的谱线，呈现为淡淡的峰值，可能需要高灵敏度的光谱仪才能检测到。
+\end{itemize}
+
+要从光谱图上判断各个线系，可以观察谱线的形状和宽度。如果谱线尖锐且窄，可能属于锐线系；而宽而平滑的谱线则可能属于漫线系。
+
 	% 思考题2
 	\begin{question}
-		
+		在发射光谱和吸收光谱测量中，光路有何异同？
 	\end{question}
+	\textbf{相同点}：
+	
+		都是由光源发射光经过光纤进入光栅光谱仪，然后软件根据得到的数据结合相关去除噪声的算法进行数据绘图。
+	
+		
+	
+	
+	\textbf{不同点}：
+	
+	在发射光谱的测量实验中，光源发出的光无其他元件的情况下，经过光纤导入进光谱仪；\\
+		在吸收光谱的实验中，光源发出的光首先会经过样品，然后再通过光纤导入进光谱仪。
+		
+		
+	
 	
 	% 思考题3
 	\begin{question}
-		
+		根据高锰酸钾溶液的吸收光谱， 应如何选择理想光源，为什么？
 	\end{question}
-	
+	根据实验所得的高锰酸钾溶液吸收光谱，在选择理想光源时需要考虑这些因素：
+	\begin{enumerate}
+		\item 波长范围：高锰酸钾溶液在水溶液中呈现紫色，其主要吸收光谱位于 500 nm 至 600 nm 范围内，吸收峰在 525 nm 附近，因此需要选择光源覆盖这一范围。
+		\item 光源素质：具有稳定且均匀的光强，以确保光在经过高锰酸钾溶液后仍然强度足够高，以提高信噪比，并且光源的相关参数要稳定可调，保证实验的基本条件不变。
+	\end{enumerate}
+	故综合以上因素，常用光源为氙灯和钨灯，此两种均能够覆盖高锰酸钾溶液的吸收光谱的范围，并且具有较好的稳定性。此外可以选用特定波长LED光源，可以精确测量某个波长的实验数据。
 	% ---
 	
 	
@@ -485,22 +718,60 @@
 	\clearpage
 	
 	% 小标题
-	\section{ETX 实验名称××× \quad\heiti 结语}
+	\section{CA3 \quad 原子的发射和吸收光谱观测分析实验 \quad\heiti 结语}
 	% ---
-	
+	\subsection{实验所用代码}
+\begin{figure}[H]
+	\begin{minipage}[b]{0.3\linewidth}
+	  \centering
+	  \includegraphics[width=0.7\linewidth]{拟合一代码.png}
+	  \caption{线性拟合1(图21)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\linewidth}
+	  \centering
+	  \includegraphics[width=0.7\linewidth]{拟合2.png}
+	  \caption{线性拟合2（图24）}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\linewidth}
+	  \centering
+	  \includegraphics[width=0.7\linewidth]{寻峰代码.png}
+	  \caption{滤波寻峰代码（图20）}
+	\end{minipage}
+\end{figure}
 	% 总结、杂谈与致谢
 	\subsection{实验心得和体会、意见建议等}
 	\begin{enumerate}
-		\item 
+		\item 实验总体难度不难，但是实验可能会存在仪器问题，导致噪声较大，本次实验中便遇到了相关问题，通过后续Python代码的编辑滤波寻峰等操作，完成了实验数据的净化。
+		\item 实验中出现了由于实验仪器本身的颜色引入了噪声，可以通过改变实验的初始设置条件来进行系统误差的去除。
+		\item \textbf{本实验报告采用LATEX编辑，实验所有要求内容均包含于本实验报告中}
 	\end{enumerate}
+	\quad \large \textbf{感谢您对于此篇实验报告的阅读与批改，祝您工作顺利！}
 	% ---
 	
 
 	% 附件
-	\subsection{附件及实验相关的软硬件资料等}
-	试验台桌面整理如%\cref{}所示。
-	
-	实验报告个人签名如
+	\subsection{附件}
+	\begin{figure}[H]
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=0.5\linewidth]{原始数据.jpg}
+		  \caption{实验记录}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=0.5\linewidth]{桌面.jpg}
+		  \caption{桌面整理}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.3\linewidth}
+		  \centering
+		  \includegraphics[width=0.5\linewidth]{预习.jpg}
+		  \caption{预习报告签字}
+		\end{minipage}
+	\end{figure}
 
 	% ---
 	
